@@ -1,8 +1,23 @@
-html, body {
-    margin: 0;
-    padding: 0;
-  }
-  canvas {
-    display: block;
-  }
-  
+header{
+  background-color: burlywood;
+  color: white;
+  font-family: cursive;
+  text-align: center;
+  padding: 20px
+}
+
+body{
+  background-color: magenta;
+}
+
+section{
+  background-color: white;
+}
+
+main{
+  background-color: aqua;
+}
+
+p {
+  color: yellow;
+}
