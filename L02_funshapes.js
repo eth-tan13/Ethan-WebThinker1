@@ -13,14 +13,15 @@ function draw() {
   // ellipse(300,200,50,25);
 
   // Challenge 2: A face using circle() function
-  circle(300,200,150);
-  circle(265,180,25);
-  circle(335,180,25);
-  circle(227,110,80);
-  circle(374,110,80);
-  ellipse(300,240,100,40)
+  // circle(300,200,150);
+  // circle(265,180,25);
+  // circle(335,180,25);
+  // circle(227,110,80);
+  // circle(374,110,80);
+  // ellipse(300,240,100,40)
 
   // Challenge 3: A house using rect() function
+  React(
 
   // Challenge 4: A rocketship using triangle() function
 
