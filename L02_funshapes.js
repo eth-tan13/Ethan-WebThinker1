@@ -22,7 +22,7 @@ function draw() {
 
   // Challenge 3: A house using rect() function
   rect(25,25,550,350);
-  rect(280,200,40,175)
+  rect(250,200,100,175)
 
   // Challenge 4: A rocketship using triangle() function
 
