@@ -30,7 +30,6 @@ function draw() {
   // Challenge 4: A rocketship using triangle() function
   ellipse(300,250,150,200);
   triangle(300,100,232,200,368,200);
-  rect(200,250,100,75)
 
   // Challenge 5: A square face using quad() function
 
