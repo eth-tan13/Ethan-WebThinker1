@@ -21,7 +21,7 @@ function draw() {
   // ellipse(300,240,100,40)
 
   // Challenge 3: A house using rect() function
-  React(
+  React()
 
   // Challenge 4: A rocketship using triangle() function
 
