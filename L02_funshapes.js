@@ -18,10 +18,10 @@ function draw() {
   // circle(335,180,25);
   // circle(227,110,80);
   // circle(374,110,80);
-  // ellipse(300,240,100,40)
+  // ellipse(300,240,100,40);
 
   // Challenge 3: A house using rect() function
-  rect(50,50,450,350)
+  rect(50,50,450,350);
 
   // Challenge 4: A rocketship using triangle() function
 
