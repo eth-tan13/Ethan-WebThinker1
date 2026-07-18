@@ -32,6 +32,7 @@ function draw() {
   // triangle(300,100,232,200,368,200);
 
   // Challenge 5: A square face using quad() function
+  ellipse()
   quad(150,50,450,50,450,350,150,350)
 
   // Challenge 6: Add some colours to the drawings in the above challenges
