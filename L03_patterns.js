@@ -11,7 +11,7 @@ function draw() {
   // circle(375,200,100);
   // circle(525,200,100);
 
-  for (let i=10;i<10;i-=1) {
+  for (let i=10;i!=0;i-=1) {
     console.log(i);
   }
 
