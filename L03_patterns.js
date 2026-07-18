@@ -15,10 +15,10 @@ function draw() {
   //   console.log(i);
   // }
 
-  for(let i=0;i<5;i++) {
-    console.log(i);
-    circle(50+i*50,100,40);
-  }
+      // for(let i=0;i<5;i++) {
+      //   console.log(i);
+      //   circle(50+i*50,100,40);
+      // }
 
   // Task 1: Colour Gradient
 
