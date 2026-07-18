@@ -15,7 +15,7 @@ function draw() {
   //   console.log(i);
   // }
 
-  for(let i=1;i<=5;i++) {
+  for(let i=0;i<=5;i++) {
     console.log(i);
     circle(50+i*50,100,40);
   }
