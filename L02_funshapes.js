@@ -36,7 +36,7 @@ function draw() {
   ellipse(140,200,50,25)
   ellipse(460,200,50,25)
   rect(100,187,40,25)
-  rect(4,187,40,25)
+  rect(460,187,40,25)
 
   // Challenge 6: Add some colours to the drawings in the above challenges
 
