@@ -41,7 +41,7 @@ function draw() {
   ellipse(140,200,50,25);
 
   stroke(80);
-  strokewidth()
+  strokeWeight(2)
   ellipse(460,200,50,25);
   rect(100,187,40,25);
   rect(460,187,40,25);
