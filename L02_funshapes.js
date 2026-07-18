@@ -33,7 +33,6 @@ function draw() {
 
   // Challenge 5: A square face using quad() function
   stroke(150);
-  strokeWidth(22);
   fill(66,179,245);
   quad(150,50,450,50,450,350,150,350);
 
