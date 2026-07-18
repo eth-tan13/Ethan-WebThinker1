@@ -39,6 +39,8 @@ function draw() {
 
   fill(150);
   ellipse(140,200,50,25);
+
+  stroke()
   ellipse(460,200,50,25);
   rect(100,187,40,25);
   rect(460,187,40,25);
