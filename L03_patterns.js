@@ -40,9 +40,9 @@ function draw() {
       if (i%2==0) {
         fill(0);
       } else {
-      fill(255);
+        fill(255);
       }
-      
+
       circle(50+i*50,100,40);
   }
   
