@@ -60,5 +60,7 @@ function draw() {
 //     }
 //   }
 
-  let circleDiameter
+  let circleDiameter=30;
+
+  let
 }
