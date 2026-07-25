@@ -32,7 +32,7 @@ function draw() {
   // Task 2: Colour Loop
   circle(100,100,100);
   fill(colourValue);
-  
+  colourValue++
 
 
   // Task 3: Row of Circles
