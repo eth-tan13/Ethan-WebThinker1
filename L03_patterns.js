@@ -28,6 +28,7 @@ function draw() {
     }
 
   // Task 2: Colour Loop
+  circle()
 
   // Task 3: Row of Circles
 
