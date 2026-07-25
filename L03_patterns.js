@@ -37,7 +37,9 @@ function draw() {
 
   // Task 3: Row of Circles
     for (let i=0;i<5;i++); {
-      if 
+      if (i%2==0) {
+        
+      }
         circle(50+i*50,100,40);
   }
   
