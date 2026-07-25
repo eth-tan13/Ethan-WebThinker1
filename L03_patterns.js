@@ -64,5 +64,5 @@ function draw() {
 
   let numCircles=5;
 
-  let
+  let totalWidth=numCircles
 }
