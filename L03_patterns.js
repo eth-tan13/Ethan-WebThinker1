@@ -38,7 +38,7 @@ function draw() {
   // Task 3: Row of Circles
     for (let i=0;i<5;i++); {
       if (i%2==0) {
-
+        fill(0);
       } else {
       fill(255);
       }
