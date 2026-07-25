@@ -51,6 +51,7 @@ function draw() {
   for (row=0;row<5;row++) {
     for (col=0;col<5;col++) {
       rect(c*50,r*50,)
+      
     }
   }
 }
