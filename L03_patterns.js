@@ -50,11 +50,11 @@ function draw() {
   // Task 4: Grid of Circles
   for (row=0;row<5;row++) {
     for (col=0;col<5;col++) {
-      // if () {
-      //   fill(0);
-      // } else {
-      //   fill(255);
-      // }
+      if ((row)) {
+        fill(0);
+      } else {
+        fill(255);
+      }
 
         rect(col*50,row*50,50,50);
     }
