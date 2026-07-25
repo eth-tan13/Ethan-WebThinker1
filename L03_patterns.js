@@ -43,7 +43,7 @@ function draw() {
       fill(255);
     }
 
-      circle(50+i*50,100,40);
+    circle(50+i*50,100,40);
   }
   
 
