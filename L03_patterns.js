@@ -1,3 +1,6 @@
+
+
+
 function setup() {
     createCanvas(600, 400);
     background(220);
@@ -29,7 +32,7 @@ function draw() {
 
   // Task 2: Colour Loop
   circle(100,100,100);
-  
+
 
   // Task 3: Row of Circles
 
