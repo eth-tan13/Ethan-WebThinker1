@@ -16,7 +16,6 @@ function mousePressed() {
     let randomColor = color(random(255), random(255), random(255));
     fill(randomColor);
     noStroke();
-    circleSize=random(100)
     ellipse(200,200,80,80)
 }
 
