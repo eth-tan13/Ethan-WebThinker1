@@ -39,10 +39,10 @@ let prevMouseX = 50
 function mouseMoved() {
     
     if (prevMouseX<mouseX){
-        circleSize--
+        circleSize++
     }
     else {
-        circleSize++
+        circleSize--
     }
     prevMouseX=mouseX
     background('white')
