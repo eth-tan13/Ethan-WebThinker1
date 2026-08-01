@@ -38,7 +38,7 @@ function mouseMoved() {
     let prevMouseX = mouseX
     if (prevMouseX<mouseX){
         let mouseX=mouseX++
-        
     }
+    else
     ellipse(200,200,mouseX,mouseY);
 }
