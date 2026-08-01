@@ -34,6 +34,7 @@ function setup() {
 //     ellipse(mouseX,mouseY,10,10)
 // }
 
+let circleSize = 
 function mouseMoved() {
     let prevMouseX = mouseX
     if (prevMouseX<mouseX){
