@@ -41,7 +41,7 @@ function mouseMoved() {
         circleSize++
     }
     else {
-        let mouseX=mouseX--
+        circleSize--
     }
     ellipse(200,200,mouseX,mouseY);
 }
