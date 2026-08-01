@@ -1,3 +1,6 @@
+for(i=0;i<256;i++) {
+    let shapeColor= z
+}
 let shapeColor = 'blue';
 
 function setup() {
@@ -7,9 +10,13 @@ function setup() {
 
 function draw() {
     fill(shapeColor);
-    ellipse(200,200,80,80)
+    ellipse(200,200,80,80);
 }
 
 function mousePressed() {
-    shapeColor =
+    shapeColor = 'red';
+}
+
+function mouseReleased() {
+    shapeColor = 'blue';
 }
