@@ -40,7 +40,7 @@ function mouseMoved() {
         let mouseX=mouseX++
     }
     else {
-        let mouse
+        let mouseX=mouseX--
     }
     ellipse(200,200,mouseX,mouseY);
 }
