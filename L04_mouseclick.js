@@ -34,11 +34,11 @@ function setup() {
 //     ellipse(mouseX,mouseY,10,10)
 // }
 
-let circleSize = 
+let circleSize=50
 function mouseMoved() {
     let prevMouseX = mouseX
     if (prevMouseX<mouseX){
-        let mouseX=mouseX++
+        
     }
     else {
         let mouseX=mouseX--
