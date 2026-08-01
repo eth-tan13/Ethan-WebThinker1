@@ -44,5 +44,6 @@ function mouseMoved() {
         circleSize--
     }
     prevMouseX=mouseX
+    back
     ellipse(200,200,circleSize,circleSize);
 }
