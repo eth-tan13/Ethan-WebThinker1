@@ -34,17 +34,18 @@ function setup() {
 //     ellipse(mouseX,mouseY,10,10)
 // }
 
-let circleSize=50
-let prevMouseX = 50
-function mouseMoved() {
+// let circleSize=50
+// let prevMouseX = 50
+// function mouseMoved() {
     
-    if (prevMouseX<mouseX){
-        circleSize++
-    }
-    else {
-        circleSize--
-    }
-    prevMouseX=mouseX
-    background('white')
-    ellipse(200,200,circleSize,circleSize);
-}
+//     if (prevMouseX<mouseX){
+//         circleSize++
+//     }
+//     else {
+//         circleSize--
+//     }
+//     prevMouseX=mouseX
+//     background('white')
+//     ellipse(200,200,circleSize,circleSize);
+// }
+
