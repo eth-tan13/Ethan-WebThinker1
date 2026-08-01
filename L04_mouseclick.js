@@ -21,6 +21,9 @@ let shapeColor = 'blue';
 //     ellipse(200,200,80,80);
 // }
 
+function setup() {
+    
+}
 function mouseMoved() {
 
 }
