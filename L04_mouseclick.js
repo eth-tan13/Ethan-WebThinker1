@@ -35,7 +35,7 @@ function setup() {
 // }
 
 function mouseMoved() {
-    let prevMouseX
+    let prevMouseX = mouseX
     for(i=0;i<201;i++){
 
     }
