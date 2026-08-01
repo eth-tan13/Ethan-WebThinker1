@@ -1,7 +1,7 @@
 let shapeColor = 'blue';
 
 // function setup() {
-//     c
+//     createCanvas(400,400);
 //     background(220);
 // }
 
@@ -23,6 +23,7 @@ let shapeColor = 'blue';
 
 function setup() {
     createCanvas(400,400);
+    background(220);
 }
 function mouseMoved() {
 
