@@ -35,7 +35,7 @@ function setup() {
 // }
 
 let circleSize=50
-let prevMouseX = mouseX
+let prevMouseX = 50
 function mouseMoved() {
     
     if (prevMouseX<mouseX){
