@@ -16,7 +16,7 @@ function mousePressed() {
     let randomColor = color(random(255), random(255), random(255));
     fill(randomColor);
     noStroke();
-    circleSize
+    circleSize=random
 }
 
 function mouseReleased() {
