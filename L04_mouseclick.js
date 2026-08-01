@@ -13,7 +13,7 @@ function draw() {
 }
 
 function mousePressed() {
-    let randomColor = color(rand)
+    let randomColor = color(random(255))
     shapeColor = 'red';
 }
 
