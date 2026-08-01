@@ -16,7 +16,7 @@ function mousePressed() {
     let randomColor = color(random(255), random(255), random(255));
     fill(randomColor);
     noStroke();
-    ellipse(200,200,80,80)
+    ellipse(200,200,80,80);
 }
 
 function mouseReleased() {
