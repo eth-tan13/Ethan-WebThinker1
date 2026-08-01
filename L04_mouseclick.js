@@ -50,9 +50,6 @@ function setup() {
 // }
 
 function mouseDragged() {
-    let randomColor = color(random(255), random(255), random(255));
-    fill(randomColor);
-    noStroke();
     for(let i=0;i<5;i++){
         let randomColor = color(random(255), random(255), random(255));
         fill(randomColor);
