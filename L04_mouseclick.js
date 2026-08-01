@@ -1,4 +1,6 @@
-for(i=0;i<256)
+for(i=0;i<256;i++) {
+    
+}
 let shapeColor = 'blue';
 
 function setup() {
