@@ -53,7 +53,8 @@ function mouseDragged() {
     let randomColor = color(random(255), random(255), random(255));
     fill(randomColor);
     noStroke();
-    for(let i=0;i<5;i++)
-    let circleSize=random(40);
-    ellipse(mouseX,mouseY,circleSize,circleSize)
+    for(let i=0;i<5;i++){
+        let circleSize=random(40);
+        ellipse(mouseX,mouseY,circleSize,circleSize)
+    }
 }
