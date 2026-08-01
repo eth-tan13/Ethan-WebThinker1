@@ -27,9 +27,13 @@ function setup() {
     fill(255,0,0);
 }
 
-function mouseMove() {
-    let randomColor = color(random(255), random(255), random(255));
-    fill(randomColor);
-    noStroke();
-    ellipse(mouseX,mouseY,10,10)
+// function mouseMoved() {
+//     let randomColor = color(random(255), random(255), random(255));
+//     fill(randomColor);
+//     noStroke();
+//     ellipse(mouseX,mouseY,10,10)
+// }
+
+function mouseMoved() {
+    
 }
