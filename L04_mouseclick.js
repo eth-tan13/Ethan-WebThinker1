@@ -35,5 +35,6 @@ function setup() {
 // }
 
 function mouseMoved() {
+    let size
     ellipse(200,200,mouseX,mouseY);
 }
