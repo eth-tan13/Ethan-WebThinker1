@@ -26,6 +26,7 @@ function setup() {
     background(220);
     fill(255,0,0);
 }
-function mouseMoved() {
 
+function mouseMoved() {
+    ellipse
 }
