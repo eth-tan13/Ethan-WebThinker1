@@ -14,7 +14,8 @@ function draw() {
 
 function mousePressed() {
     let randomColor = color(random(255), random(255), random(255));
-    fill(randomColor)
+    fill(randomColor);
+    noStroke()
     shapeColor = 'red';
 }
 
