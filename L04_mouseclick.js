@@ -35,5 +35,5 @@ function setup() {
 // }
 
 function mouseMoved() {
-    ellipse(200,200,random(200),random(200));
+    ellipse(200,200,mouseX,random(200));
 }
