@@ -2,5 +2,5 @@ let shapeColor = 'blue';
 
 function setup() {
     createCanvas(400,400);
-    backg
+    background(220);
 }
