@@ -1,5 +1,5 @@
 for(i=0;i<256;i++) {
-    
+    let shapeColor
 }
 let shapeColor = 'blue';
 
