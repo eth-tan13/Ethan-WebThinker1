@@ -18,5 +18,5 @@ function mousePressed() {
 
 function mouseReleased() {
     shapeColor = 'white';
-    ellipse
+    ellipse(200,200,80,80);
 }
