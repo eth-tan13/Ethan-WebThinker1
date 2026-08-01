@@ -2,7 +2,7 @@ for(i=0;i<256;i++) {
     let shapeColor=i
 }
 
-let shapeColor = 'blue';
+// let shapeColor = 'blue';
 
 function setup() {
     createCanvas(400,400);
