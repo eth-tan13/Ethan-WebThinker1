@@ -35,8 +35,9 @@ function setup() {
 // }
 
 function mouseMoved() {
+    let prevMouseX
     for(i=0;i<201;i++){
-        
+
     }
     ellipse(200,200,mouseX,mouseY);
 }
