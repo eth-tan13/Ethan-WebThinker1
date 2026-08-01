@@ -49,3 +49,6 @@ function setup() {
 //     ellipse(200,200,circleSize,circleSize);
 // }
 
+function mouseDragged() {
+    ellipse
+}
