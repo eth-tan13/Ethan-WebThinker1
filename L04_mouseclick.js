@@ -43,6 +43,6 @@ function mouseMoved() {
     else {
         circleSize--
     }
-    circle
+    prevMouseX=mouseX
     ellipse(200,200,circleSize,circleSize);
 }
