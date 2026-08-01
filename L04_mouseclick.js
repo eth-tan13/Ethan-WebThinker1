@@ -35,6 +35,6 @@ function setup() {
 // }
 
 function mouseMoved() {
-    let size
+    let circleSize=mouse
     ellipse(200,200,mouseX,mouseY);
 }
