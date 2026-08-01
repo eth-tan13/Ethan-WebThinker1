@@ -35,5 +35,5 @@ function setup() {
 // }
 
 function mouseMoved() {
-    ellipse(2)
+    ellipse(200,200)
 }
