@@ -55,7 +55,7 @@ function mouseDragged() {
     noStroke();
     for(let i=0;i<5;i++){
         let circleSize=random(20);
-        let rand
+        let randomMouseX=random
         ellipse(mouseX,mouseY,circleSize,circleSize);
     }
 }
