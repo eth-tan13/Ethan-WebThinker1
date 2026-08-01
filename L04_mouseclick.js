@@ -49,11 +49,10 @@ function setup() {
 //     ellipse(200,200,circleSize,circleSize);
 // }
 
-let circleSize=
 function mouseDragged() {
     let randomColor = color(random(255), random(255), random(255));
     fill(randomColor);
     noStroke();
-
+    let circleSize=
     ellipse(mouseX,mouseY,20,20)
 }
