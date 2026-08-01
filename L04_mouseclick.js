@@ -27,7 +27,7 @@ function setup() {
     fill(255,0,0);
 }
 
-function draw() {
+function mouseMove() {
     let randomColor = color(random(255), random(255), random(255));
     fill(randomColor);
     noStroke();
