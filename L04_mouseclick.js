@@ -17,7 +17,7 @@ function mousePressed() {
     fill(randomColor);
     noStroke();
     circleSize=random(100)
-    ellipse
+    ellipse(mouseX,mouseY,circleSize,circleSize)
 }
 
 function mouseReleased() {
