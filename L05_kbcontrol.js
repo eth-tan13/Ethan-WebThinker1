@@ -32,5 +32,5 @@ function keyPressed() {
 }
 
 function keyReleased() {
-    
+    clea
 }
