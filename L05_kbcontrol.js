@@ -24,6 +24,7 @@ function keyPressed() {
     let circleX=random(0,400);
     let circleY=random(0,400);
     for(let i=0;i<number;i++) {
+        fill(circleColour)
         ellipse(circleX,circleY,circleSize,circleSize);
     }
 }
