@@ -19,6 +19,6 @@ function draw() {
 
 function keyPressed() {
     let rectSize=random(10,50)
-    let colour
+    let circleColour
     random(5,20)
 }
