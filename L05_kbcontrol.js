@@ -38,7 +38,7 @@ function draw() {
 function keyPressed() {
     if (keyCode==48)
         circle(200,200,200);
-    if (key=='s')
+    if (key==32)
         square(100,100,200);
 }
 
