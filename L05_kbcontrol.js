@@ -38,7 +38,7 @@ function draw() {
 function keyPressed() {
     if (key=='c')
         circle(200,200,200);
-    elif (key=='s')
+    if (key=='s')
         rect(200,200,200,200);
 }
 
