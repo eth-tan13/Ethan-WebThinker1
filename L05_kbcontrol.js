@@ -18,5 +18,6 @@ function draw() {
 // }
 
 function keyPressed() {
+    let rectSize
     random(5,20)
 }
