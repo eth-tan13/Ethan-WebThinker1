@@ -6,7 +6,7 @@ function setup() {
 
 function draw() {
     background(220);
-    rect(width/2-rectSize/2,height/2-rectSize/2,rectSize,rectSize)
+    // rect(width/2-rectSize/2,height/2-rectSize/2,rectSize,rectSize)
 }
 
 // function keyPressed() {
@@ -23,4 +23,5 @@ function keyPressed() {
     let number=random(5,20)
     let circleX=random(0,400)
     let circleY=random(0,400)
+    
 }
