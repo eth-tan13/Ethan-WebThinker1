@@ -36,7 +36,7 @@ function draw() {
 // }
 
 function keyPressed() {
-    if (key=='c')
+    if (keyCode==48)
         circle(200,200,200);
     if (key=='s')
         square(100,100,200);
