@@ -24,7 +24,6 @@ function keyPressed() {
     let circleX=random(0,400)
     let circleY=random(0,400)
     for(let i=0;i<number;i++) {
-        
+        ellipse(circleX,circleY,circleSize,circleSize)
     }
-    ellipse(circleX,circleY,circleSize,circleSize)
 }
