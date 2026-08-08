@@ -23,5 +23,5 @@ function keyPressed() {
     let number=random(5,20)
     let circleX=random(0,400)
     let circleY=random(0,400)
-    ellipse(circle)
+    ellipse(circleX,)
 }
