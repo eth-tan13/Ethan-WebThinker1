@@ -39,7 +39,7 @@ function keyPressed() {
     if (key=='c')
         circle(200,200,200);
     if (key=='s')
-        square(200,200,200);
+        square(100,100,200);
 }
 
 function keyReleased() {
