@@ -17,3 +17,6 @@ function draw() {
 //     rectSize=50;
 // }
 
+function keyPressed() {
+    
+}
