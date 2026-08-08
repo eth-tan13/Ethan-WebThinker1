@@ -18,6 +18,7 @@ function draw() {
 // }
 
 function keyPressed() {
-    let rectSize
+    let rectSize=random(10,50)
+    let colour
     random(5,20)
 }
