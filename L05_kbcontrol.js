@@ -37,7 +37,7 @@ function draw() {
 
 function keyPressed() {
     console.log("key:",key);
-    
+    console.log("keyCode:",keyCode);
     if (keyCode==48)
         circle(200,200,200);
     if (key==32)
