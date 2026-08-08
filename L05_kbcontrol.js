@@ -18,5 +18,5 @@ function draw() {
 // }
 
 function keyPressed() {
-    random
+    random(5,20)
 }
