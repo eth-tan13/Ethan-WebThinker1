@@ -25,6 +25,7 @@ function keyPressed() {
         let circleX=random(0,400);
         let circleY=random(0,400);
         fill(circleColour);
+        noStroke();
         ellipse(circleX,circleY,circleSize,circleSize);
     }
 }
