@@ -39,5 +39,5 @@ function keyPressed() {
     if (key=='c')
         circle(200,200,200)
     elif (key=='s')
-
+        square
 }
