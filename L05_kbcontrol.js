@@ -18,5 +18,5 @@ function draw() {
 // }
 
 function keyPressed() {
-    let 
+    let 6
 }
