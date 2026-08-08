@@ -30,3 +30,7 @@ function keyPressed() {
         ellipse(circleX,circleY,circleSize,circleSize);
     }
 }
+
+function keyReleased() {
+
+}
