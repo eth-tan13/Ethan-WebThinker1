@@ -19,6 +19,6 @@ function draw() {
 
 function keyPressed() {
     let circleSize=random(10,50)
-    let circleColour=color(random(0,))
+    let circleColour=color(random(0,255),)
     random(5,20)
 }
