@@ -18,19 +18,20 @@ function draw() {
 //     rectSize=50;
 // }
 
-function keyPressed() {
-    let number=random(5,20);
-    for(let i=0;i<number;i++) {
-        let circleSize=random(10,50);
-        let circleColour=color(random(0,255),random(0,255),random(0,255));
-        let circleX=random(0,400);
-        let circleY=random(0,400);
-        fill(circleColour);
-        noStroke();
-        ellipse(circleX,circleY,circleSize,circleSize);
-    }
-}
+// function keyPressed() {
+//     let number=random(5,20);
+//     for(let i=0;i<number;i++) {
+//         let circleSize=random(10,50);
+//         let circleColour=color(random(0,255),random(0,255),random(0,255));
+//         let circleX=random(0,400);
+//         let circleY=random(0,400);
+//         fill(circleColour);
+//         noStroke();
+//         ellipse(circleX,circleY,circleSize,circleSize);
+//     }
+// }
 
-function keyReleased() {
-    background(220);
-}
+// function keyReleased() {
+//     background(220);
+// }
+
