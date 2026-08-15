@@ -74,4 +74,6 @@ let x=200;
 //     circle(width/2+x,height/2,100);
 // }
 
-functionb
+function draw() {
+    
+}
