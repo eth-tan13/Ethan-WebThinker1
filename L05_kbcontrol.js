@@ -65,7 +65,7 @@ function draw() {
 //     }
 // }
 
-let x=200;
+let y=200;
 
 // function draw() {
 //     if (keyCode==RIGHT_ARROW) {
