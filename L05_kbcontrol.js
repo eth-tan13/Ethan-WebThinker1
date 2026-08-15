@@ -1,7 +1,7 @@
 let rectSize = 50;
 
 function setup() {
-    createCanvas(400,400);
+    createCanvas(200,200);
     background(220);
 }
 
@@ -65,7 +65,7 @@ function draw() {
 //     }
 // }
 
-let y=200;
+let y=100;
 
 // function draw() {
 //     if (keyCode==RIGHT_ARROW) {
