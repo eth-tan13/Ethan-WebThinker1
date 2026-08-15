@@ -71,6 +71,6 @@ function mouseMoved() {
     } else if (mouseX<=125) {
         fill("green")
     } else {
-        
+        fill("blue")
     }
 }
