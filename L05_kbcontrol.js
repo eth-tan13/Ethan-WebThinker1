@@ -92,5 +92,5 @@ let x=200;
 // }
 
 function draw() {
-    
+    background(220)
 }
