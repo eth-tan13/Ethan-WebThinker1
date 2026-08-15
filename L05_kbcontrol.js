@@ -40,7 +40,7 @@ function keyPressed() {
     console.log("keyCode:",keyCode);
     if (keyCode==67)
         circle(200,200,200);
-    if (keyCode==83)
+    else if (keyCode==83)
         square(100,100,200);
 }
 
