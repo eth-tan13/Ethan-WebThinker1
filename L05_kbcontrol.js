@@ -68,5 +68,7 @@ function draw() {
 let x=0
 
 function draw() {
-    if (keyIsDown(RIGHT_ARROW))
+    if (keyIsDown(RIGHT_ARROW)) {
+        x+=1
+    }
 }
