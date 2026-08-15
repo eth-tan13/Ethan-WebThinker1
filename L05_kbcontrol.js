@@ -94,8 +94,10 @@ let x=200;
 function draw() {
     background(220);
     if (keyIsDown(UP_ARROW)) {
-        y+=2;
+        y-=2;
         direction="down";
     }
-    if (keyIsDown(DOWN_ARROW))
+    if (keyIsDown(DOWN_ARROW)) {
+        y+=2;
+    }
 }
