@@ -67,6 +67,7 @@ function draw() {
 
 let y=100;
 
+
 // function draw() {
 //     if (keyCode==RIGHT_ARROW) {
 //         x+=1
