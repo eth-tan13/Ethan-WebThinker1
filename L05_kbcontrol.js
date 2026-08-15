@@ -83,3 +83,7 @@ function draw() {
         x+=5
     }
 }
+
+if (x<25) {
+    
+}
