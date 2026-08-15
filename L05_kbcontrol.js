@@ -67,6 +67,6 @@ function draw() {
 
 function mouseMoved() {
     if (mouseX<=75) {
-        
+        fill
     }
 }
