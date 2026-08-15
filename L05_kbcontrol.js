@@ -75,7 +75,7 @@ let x=200;
 // }
 
 // function draw() {
-//     background(220)
+//     background(220);
 //     circle(x,height/2,50);
 //     if (keyIsDown(LEFT_ARROW)) {
 //         x-=5;
@@ -92,6 +92,7 @@ let x=200;
 // }
 
 function draw() {
-    background(220)
-    triangle(200,175,175,225,225,175)
+    background(220);
+    triangle(200,175,175,225,225,175);
+
 }
