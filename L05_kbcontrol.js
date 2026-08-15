@@ -57,6 +57,8 @@ function keyPressed() {
     if (key==="w") {
         fill("white")
     } else if (key==="r") {
-        fill()
+        fill("red")
+    } else if (key==="g") {
+        
     }
 }
