@@ -101,5 +101,5 @@ function draw() {
         y+=2;
         direction="down";
     }
-    
+    if (direction=="up")
 }
