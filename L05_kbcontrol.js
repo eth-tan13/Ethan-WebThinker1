@@ -1,7 +1,7 @@
 let rectSize = 50;
 
 function setup() {
-    createCanvas(400,400);
+    createCanvas(200,200);
     background(220);
 }
 
@@ -50,5 +50,5 @@ function draw() {
 
 function draw() {
     background(220)
-    CSSNumericValue(1)
+    CSSNumericValue(100,100,50)
 }
