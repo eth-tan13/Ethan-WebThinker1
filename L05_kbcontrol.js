@@ -101,5 +101,7 @@ function draw() {
         y+=2;
         direction="down";
     }
-    if (direction=="up")
+    if (direction=="up") {
+        triangle(75)
+    }
 }
