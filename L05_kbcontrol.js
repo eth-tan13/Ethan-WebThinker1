@@ -95,5 +95,6 @@ function draw() {
     background(220);
     if (keyIsDown(UP_ARROW)) {
         y+=2;
+        direction="down";
     }
 }
