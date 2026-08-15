@@ -38,9 +38,8 @@ function draw() {
 // function keyPressed() {
 //     console.log("key:",key);
 //     console.log("keyCode:",keyCode);
-//     if (keyCode==67) {
+//     if (keyCode==67)
 //         circle(200,200,200);
-
 //     else if (keyCode==83)
 //         square(100,100,200);
 // }
