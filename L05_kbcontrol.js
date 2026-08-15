@@ -93,7 +93,7 @@ let x=200;
 
 function draw() {
     background(220);
-    triangle(200,175,175,225,225,175);
+    triangle(x,175,175,225,225,175);
     if (keyIsDown(UP_ARROW)) {
         x-=5
     }
