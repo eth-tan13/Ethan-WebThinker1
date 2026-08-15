@@ -94,6 +94,6 @@ let x=200;
 function draw() {
     background(220);
     if (keyIsDown(UP_ARROW)) {
-        y-=5
+        y+=2;
     }
 }
