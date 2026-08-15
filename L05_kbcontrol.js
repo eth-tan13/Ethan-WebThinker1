@@ -67,3 +67,6 @@ function draw() {
 
 let x=0
 
+function draw() {
+    if (keyIsDown(RIGHT_ARROW))
+}
