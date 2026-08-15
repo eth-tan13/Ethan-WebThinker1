@@ -90,3 +90,7 @@ let x=200;
 //     x=width-25;
 //     }
 // }
+
+function draw() {
+    
+}
