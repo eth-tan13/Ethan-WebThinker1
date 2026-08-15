@@ -66,7 +66,7 @@ function draw() {
 // }
 
 let y=100;
-
+let direction="up";
 
 // function draw() {
 //     if (keyCode==RIGHT_ARROW) {
