@@ -86,6 +86,6 @@ function draw() {
     x=25;
     }
     if (x>width-25) {
-    x=width
+    x=width-25;
     }
 }
