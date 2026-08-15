@@ -65,4 +65,5 @@ function draw() {
 //     }
 // }
 
-let
+let x=0
+
