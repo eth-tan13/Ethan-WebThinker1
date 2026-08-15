@@ -54,7 +54,8 @@ function draw() {
 }
 
 function keyPressed() {
-    if (key=="w") {
+    if (key==="w") {
         fill("white")
-    }
+    } else if (key==="r")
+        fill('')
 }
