@@ -24,11 +24,6 @@ function draw() {
         x+=2;
         direction="right";
     }
-    if (keyIsDown(SPACE)) {
-        let fillColour=200
-    } else {
-        let fillColour=50
-    }
     y=constrain(y,50,350);
     x=constrain(x,50,350);
     if (direction=="up") {
