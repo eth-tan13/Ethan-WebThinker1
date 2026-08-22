@@ -29,7 +29,7 @@ function draw() {
     } else {
         let fillColour=50
     }
-    y=constrain(y,0,height);
+    y=constrain(y,50,350);
     x=constrain(x,0,width);
     if (direction=="up") {
         rect(x,y,50,50);
