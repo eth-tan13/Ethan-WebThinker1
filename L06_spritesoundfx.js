@@ -24,6 +24,7 @@ function draw() {
     y=constrain(y,0,height);
     x=constrain(x,0,width);
     if (direction=="up") {
-        square(10)
+        square(200,200,50)
+        
     }
 }
