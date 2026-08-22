@@ -47,7 +47,6 @@ let y=200;
 
 function draw() {
     background("lightblue");
-    image(staticImage,0,0,110,133);
     if(keyIsDown(UP_ARROW)) {
         y-=2
     }
@@ -60,7 +59,7 @@ function draw() {
     if(keyIsDown(UP_ARROW)) {
         x+=2
     }
-        image(staticImage,0,0,110,133);
+    image(staticImage,0,0,110,133);
 }
 
 function keyPressed() {
