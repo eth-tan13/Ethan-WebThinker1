@@ -40,5 +40,7 @@ function draw() {
     } else if (direction=="left") {
         square(x,y,50);
         fill(fillColour)
-    } else if (direction=="right")
+    } else if (direction=="right") {
+        square(x,y,50)
+    }
 }
