@@ -41,6 +41,7 @@ function draw() {
         square(x,y,50);
         fill(fillColour)
     } else if (direction=="right") {
-        square(x,y,50)
+        square(x,y,50);
+        fill(fillColour)
     }
 }
