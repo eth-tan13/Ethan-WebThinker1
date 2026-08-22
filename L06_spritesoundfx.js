@@ -38,10 +38,10 @@ function draw() {
         rect(x,y,50,50);
         fill(fillColour);
     } else if (direction=="left") {
-        rect(x,y,50);
+        rect(x,y,50,50);
         fill(fillColour)
     } else if (direction=="right") {
-        square(x,y,50);
+        rect(x,y,50,50);
         fill(fillColour)
     }
 }
