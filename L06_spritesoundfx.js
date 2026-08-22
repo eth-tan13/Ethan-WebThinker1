@@ -1,30 +1,32 @@
-function setup() {
-    createCanvas(400,400);
-    background(220);
-}
+// function setup() {
+//     createCanvas(400,400);
+//     background(220);
+// }
 
-let x=200;
-let y=200;
+// let x=200;
+// let y=200;
 
-function draw() {
-    background(220);
-    if (keyIsDown(UP_ARROW)) {
-        y-=2;
-        direction="up";
-    }
-    if (keyIsDown(DOWN_ARROW)) {
-        y+=2;
-        direction="down";
-    }
-    if (keyIsDown(LEFT_ARROW)) {
-        x-=2;
-        direction="left";
-    }
-    if (keyIsDown(RIGHT_ARROW)) {
-        x+=2;
-        direction="right";
-    }
-    y=constrain(y,50,350-50);
-    x=constrain(x,50,350-50);
-    rect(x,y,50,50);
-}
+// function draw() {
+//     background(220);
+//     if (keyIsDown(UP_ARROW)) {
+//         y-=2;
+//         direction="up";
+//     }
+//     if (keyIsDown(DOWN_ARROW)) {
+//         y+=2;
+//         direction="down";
+//     }
+//     if (keyIsDown(LEFT_ARROW)) {
+//         x-=2;
+//         direction="left";
+//     }
+//     if (keyIsDown(RIGHT_ARROW)) {
+//         x+=2;
+//         direction="right";
+//     }
+//     y=constrain(y,50,350-50);
+//     x=constrain(x,50,350-50);
+//     rect(x,y,50,50);
+// }
+
+let 
