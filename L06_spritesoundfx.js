@@ -3,8 +3,8 @@ function setup() {
     background(220);
 }
 
-let x=100;
-let y=100;
+let x=200;
+let y=200;
 
 function draw() {
     background(220);
@@ -35,7 +35,9 @@ function draw() {
         square(x,y,50);
         fill(fillColour);
     } else if (direction=="down") {
-        square(200,200,50);
+        square(x,y,50);
         fill(fillColour);
+    } else if (direction=="left") {
+        
     }
 }
