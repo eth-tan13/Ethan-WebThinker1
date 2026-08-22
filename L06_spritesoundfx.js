@@ -52,13 +52,13 @@ function draw() {
         y-=speed;
     }
     if(keyIsDown(DOWN_ARROW)) {
-        y+=2;
+        y+=speed;
     }
     if(keyIsDown(UP_ARROW)) {
-        x-=2;
+        x-=speed;
     }
     if(keyIsDown(UP_ARROW)) {
-        x+=2;
+        x+=speed;
     }
     image(staticImage,x,y,100,100);
 }
