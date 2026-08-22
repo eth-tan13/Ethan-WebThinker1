@@ -45,7 +45,7 @@ function setup() {
 function draw() {
     background("lightblue");
     image(staticImage,0,0,110,133);
-    keyIsDown()
+    if(keyIsDown(UP_ARROW))
 }
 
 function keyPressed() {
