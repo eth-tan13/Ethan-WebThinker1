@@ -31,6 +31,7 @@ function draw() {
     if (direction=="up") {
         square(200,200,50)
         fill(fillColour)
+    } else if (direction=="down") {
+        
     }
-    
 }
