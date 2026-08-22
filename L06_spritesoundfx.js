@@ -22,7 +22,7 @@ function draw() {
         direction="right";
     }
     if (keyIsDown(SPACE)) {
-        
+        fillColour
     }
     y=constrain(y,0,height);
     x=constrain(x,0,width);
