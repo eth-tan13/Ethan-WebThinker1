@@ -60,8 +60,9 @@ function draw() {
     if(keyIsDown(RIGHT_ARROW)) {
         x+=speed;
     }
-    if(x===0||x===width-100||y===0||y===height) {
+    if(x===0||x===width-100||y===0||y===height-100) {
         background("red");
+        if(!soundEffect)
         popSound.play();
     }
     x=constrain(x,0,width-100)
