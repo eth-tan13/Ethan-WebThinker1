@@ -32,7 +32,7 @@ function draw() {
     y=constrain(y,0,height);
     x=constrain(x,0,width);
     if (direction=="up") {
-        square(x,y,50);
+        rect(x,y,50,50);
         fill(fillColour);
     } else if (direction=="down") {
         square(x,y,50);
