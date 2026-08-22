@@ -44,11 +44,12 @@ function setup() {
 
 let x=100;
 let y=280;
+let speed=5;
 
 function draw() {
     background("lightblue");
     if(keyIsDown(UP_ARROW)) {
-        y-=2;
+        y-=speed;
     }
     if(keyIsDown(DOWN_ARROW)) {
         y+=2;
