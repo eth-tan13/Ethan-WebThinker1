@@ -106,6 +106,6 @@ function draw() {
     if (direction=="up") {
         triangle(75,y+50,100,y,125,y+50);
     } else if (direction=="down") {
-        triangle(75,y-50,100,y+25,125,y-25);
+        triangle(75,y-50,100,y,125,y-50);
     }
 }
