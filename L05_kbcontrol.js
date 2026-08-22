@@ -102,7 +102,7 @@ function draw() {
         y+=2;
         direction="down";
     }
-    y=constrain(y,0,height)
+    y=constrain(y,0,height);
     if (direction=="up") {
         triangle(75,y+50,100,y,125,y+50);
     } else if (direction=="down") {
