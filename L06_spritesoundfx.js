@@ -21,6 +21,7 @@ function draw() {
         x+=2;
         direction="right";
     }
+    if (keyIsDown())
     y=constrain(y,0,height);
     x=constrain(x,0,width);
     if (direction=="up") {
