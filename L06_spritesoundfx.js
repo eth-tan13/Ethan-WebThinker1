@@ -26,5 +26,5 @@ function draw() {
     }
     y=constrain(y,50,350);
     x=constrain(x,50,350);
-    rect
+    Reflect(x,y,50,50)
 }
