@@ -48,5 +48,7 @@ function draw() {
 }
 
 function keyPressed() {
-    id
+    if (keyCode===32) {
+        
+    }
 }
