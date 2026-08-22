@@ -42,7 +42,8 @@ function setup() {
     bgMusic.loop();
 }
 
-
+let x=200;
+let y=200;
 
 function draw() {
     background("lightblue");
