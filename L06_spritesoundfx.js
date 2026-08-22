@@ -60,6 +60,7 @@ function draw() {
     if(keyIsDown(UP_ARROW)) {
         x+=2
     }
+    
 }
 
 function keyPressed() {
