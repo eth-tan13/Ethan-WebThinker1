@@ -60,7 +60,7 @@ function draw() {
     if(keyIsDown(RIGHT_ARROW)) {
         x+=speed;
     }
-    if(x===0||x===width-100) {
+    if(x===0||x===width-100||y===0||y===height) {
         background("red");
         popSound.play();
     }
