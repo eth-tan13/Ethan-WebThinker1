@@ -25,6 +25,6 @@ function draw() {
     x=constrain(x,0,width);
     if (direction=="up") {
         square(200,200,50)
-        fill(fillc)
+        fill(fillColour)
     }
 }
