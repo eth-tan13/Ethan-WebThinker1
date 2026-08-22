@@ -26,17 +26,5 @@ function draw() {
     }
     y=constrain(y,50,350);
     x=constrain(x,50,350);
-    if (direction=="up") {
-        rect(x,y,50,50);
-        fill(fillColour);
-    } else if (direction=="down") {
-        rect(x,y,50,50);
-        fill(fillColour);
-    } else if (direction=="left") {
-        rect(x,y,50,50);
-        fill(fillColour)
-    } else if (direction=="right") {
-        rect(x,y,50,50);
-        fill(fillColour)
-    }
+    rect
 }
