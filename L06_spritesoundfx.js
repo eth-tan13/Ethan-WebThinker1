@@ -42,4 +42,6 @@ function setup() {
     bgMusic.loop();
 }
 
-function draw()
+function draw() {
+    background
+}
