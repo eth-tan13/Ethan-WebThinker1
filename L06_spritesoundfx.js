@@ -60,6 +60,7 @@ function draw() {
     if(keyIsDown(UP_ARROW)) {
         x+=speed;
     }
+    x=
     image(staticImage,x,y,100,100);
 }
 
