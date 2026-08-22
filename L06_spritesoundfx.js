@@ -59,7 +59,7 @@ function draw() {
     if(keyIsDown(UP_ARROW)) {
         x+=2;
     }
-    image(staticImage,0,0,110,133);
+    image(staticImage,x,y,100,133);
 }
 
 function keyPressed() {
