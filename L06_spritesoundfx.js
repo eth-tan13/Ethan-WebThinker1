@@ -63,7 +63,7 @@ function draw() {
     if(x===0||x===width-100||y===0||y===height-100) {
         background("red");
         if(!soundEffect.isPlaying()) {
-        popSound.play();
+            soundEffect.play();
         }
     }
     x=constrain(x,0,width-100)
