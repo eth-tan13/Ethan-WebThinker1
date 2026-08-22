@@ -29,4 +29,4 @@
 //     rect(x,y,50,50);
 // }
 
-let 
+let soundEffect, bgMusic
