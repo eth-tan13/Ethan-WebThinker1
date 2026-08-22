@@ -62,8 +62,9 @@ function draw() {
     }
     if(x===0||x===width-100||y===0||y===height-100) {
         background("red");
-        if(!soundEffect)
+        if(!soundEffect.isPlaying()) {
         popSound.play();
+        }
     }
     x=constrain(x,0,width-100)
     y=constrain(y,0,height-100)
