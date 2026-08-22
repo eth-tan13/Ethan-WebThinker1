@@ -60,7 +60,8 @@ function draw() {
     if(keyIsDown(UP_ARROW)) {
         x+=speed;
     }
-    x=constrain(x,)
+    x=constrain(x,0,width-100)
+    y=constrain()
     image(staticImage,x,y,100,100);
 }
 
