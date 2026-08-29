@@ -61,6 +61,7 @@ function setup() {
 function draw() {
     background(220);
     ballX+=ballSpeedX;
+    ballY
     noStroke();
     fill("#fac002")
     circle(ballX,ballY,ballSize)
