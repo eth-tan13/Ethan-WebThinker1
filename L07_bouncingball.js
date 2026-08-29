@@ -12,5 +12,18 @@ function setup() {
 
 function draw(){
     background("gray");
-    image(picoImage,width/2,he
-        
+    image(picoImage,width/2,height/2,100,100);
+}
+
+    if(keyIsDown(UP_ARROW)) {
+        y-=speed;
+    }
+    if(keyIsDown(DOWN_ARROW)) {
+        y+=speed;
+    }
+    if(keyIsDown(LEFT_ARROW)) {
+        x-=speed;
+    }
+    if(keyIsDown(RIGHT_ARROW)) {
+        x+=speed;
+    }
