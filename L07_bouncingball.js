@@ -38,9 +38,11 @@ function draw(){
 function keyPressed() {
     if (keyCode===32) {
         popSound.play();
+        picoWidth=50
     }
 }
 
 function keyReleased() {
+    if (keyCode===" ");
     
 }
