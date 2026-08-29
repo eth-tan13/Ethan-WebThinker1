@@ -51,8 +51,8 @@
 let ballX=300;
 let ballY=200;
 let ballSize=50;
-let ballSpeedX=1;
-let ballSpeedY=1;
+let ballSpeedX=100;
+let ballSpeedY=100;
 
 function setup() {
     createCanvas(600,400);
