@@ -50,7 +50,7 @@
 
 let ballX=300;
 let ballY=200;
-let ballSize=
+let ballSize=50;
 
 function setup() {
     createCanvas(600,400);
@@ -58,5 +58,5 @@ function setup() {
 
 function draw() {
     background(220);
-    circle()
+    circle(ballX,ballY,ballSize)
 }
