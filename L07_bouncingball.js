@@ -62,10 +62,10 @@ function draw() {
     background(220);
     ballX+=ballSpeedX;
     ballY+=ballSpeedY;
-    if (ballX<=0+ballSize/2||ballX>=width) {
+    if (ballX<=0+ballSize/2||ballX>=width-ballSize/2) {
         ballSpeedX*=-1;
     }
-    if (ballY<=0||ballY>=height) {
+    if (ballY<=0+ballSize/2||ballY>=height) {
         ballSpeedY*=-1;
     }
     noStroke();
