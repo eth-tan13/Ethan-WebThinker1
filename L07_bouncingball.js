@@ -40,3 +40,5 @@ function keyPressed() {
         popSound.play();
     }
 }
+
+function keyReleased()
