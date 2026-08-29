@@ -48,6 +48,8 @@
 //         picoWidth=100;
 // }
 
+let ballX
+
 function setup() {
     createCanvas(600,400);
 }
