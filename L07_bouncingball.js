@@ -38,12 +38,12 @@ function draw(){
 function keyPressed() {
     if (keyCode===32) {
         popSound.play();
-        picoWidth=50
+        picoWidth=50;
     }
 }
 
 function keyReleased() {
     if (keyCode===" ");
         popSound.play();
-        picoWidth=50
+        picoWidth=100;
 }
