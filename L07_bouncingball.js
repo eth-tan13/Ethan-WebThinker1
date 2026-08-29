@@ -12,5 +12,5 @@ function setup() {
 
 function draw(){
     background("gray");
-    
+    Image(picoImage)
 }
