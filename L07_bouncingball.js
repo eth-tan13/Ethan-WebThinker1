@@ -2,5 +2,5 @@ let picoImage;
 let popSound;
 
 function preload() {
-    pic
+    picoImage = loadImage('assets/picopico.png');
 }
