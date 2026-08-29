@@ -62,7 +62,7 @@ function draw() {
     background(220);
     ballX+=ballSpeedX;
     ballY+=ballSpeedY;
-    if (ballX)
+    if (ballX<=0||ballX>)
     noStroke();
     fill("#fac002")
     circle(ballX,ballY,ballSize)
