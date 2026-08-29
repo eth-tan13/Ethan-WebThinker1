@@ -12,7 +12,6 @@ function setup() {
 
 function draw(){
     background("gray");
-
 }
 
     if(keyIsDown(UP_ARROW)) {
@@ -27,3 +26,5 @@ function draw(){
     if(keyIsDown(RIGHT_ARROW)) {
         x+=5;
     }
+
+    image(picoImage,width/2,height/2,100,100);
