@@ -14,7 +14,6 @@ function setup() {
 
 function draw(){
     background("gray");
-
 }
 
     if(keyIsDown(UP_ARROW)) {
