@@ -44,5 +44,6 @@ function keyPressed() {
 
 function keyReleased() {
     if (keyCode===" ");
-    
+        popSound.play();
+        picoWidth=50
 }
