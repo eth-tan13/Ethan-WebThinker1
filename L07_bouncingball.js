@@ -1,1 +1,2 @@
-// write your codes here
+let picoImage;
+let popSound
