@@ -64,6 +64,7 @@ function draw() {
     ballY+=ballSpeedY;
     if (ballX<=0+ballSize/2||ballX>=width-ballSize/2) {
         ballSpeedX*=-1;
+        fill()
     }
     if (ballY<=0+ballSize/2||ballY>=height-ballSize/2) {
         ballSpeedY*=-1;
