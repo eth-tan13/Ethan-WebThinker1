@@ -34,3 +34,6 @@ function draw(){
     image(picoImage,x,y,100,100);
 }
 
+function keyPressed() {
+    if (keyCode
+}
