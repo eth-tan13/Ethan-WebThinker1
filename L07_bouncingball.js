@@ -63,10 +63,10 @@ function draw() {
     ballX+=ballSpeedX;
     ballY+=ballSpeedY;
     if (ballX<=0||ballX>=width) {
-        ballSpeedX*=-1
+        ballSpeedX*=-1;
     }
     if (ballY<=0||ballY>=height) {
-        ballSpeedU
+        ballSpeedY*=-1;
     }
     noStroke();
     fill("#fac002")
