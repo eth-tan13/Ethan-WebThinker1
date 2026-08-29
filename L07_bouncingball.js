@@ -51,8 +51,8 @@
 let ballX=300;
 let ballY=200;
 let ballSize=50;
-let ballSpeedX=5;
-let ballSpeedY=5;
+let ballSpeedX=100;
+let ballSpeedY=100;
 
 function setup() {
     createCanvas(600,400);
@@ -65,7 +65,7 @@ function draw() {
     if (ballX<=0+ballSize/2||ballX>=width-ballSize/2) {
         ballSpeedX*=-1;
     }
-    if (ballY<=0+ballSize/2||ballY>=height) {
+    if (ballY<=0+ballSize/2||ballY>=height-ballSize/2) {
         ballSpeedY*=-1;
     }
     noStroke();
