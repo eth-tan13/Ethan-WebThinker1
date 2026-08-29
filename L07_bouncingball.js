@@ -60,6 +60,7 @@ function setup() {
 
 function draw() {
     background(220);
+    ball
     noStroke();
     fill("#fac002")
     circle(ballX,ballY,ballSize)
