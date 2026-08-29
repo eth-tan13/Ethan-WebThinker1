@@ -48,18 +48,7 @@ let speed=5;
 
 function draw() {
     background("lightblue");
-    if(keyIsDown(UP_ARROW)) {
-        y-=speed;
-    }
-    if(keyIsDown(DOWN_ARROW)) {
-        y+=speed;
-    }
-    if(keyIsDown(LEFT_ARROW)) {
-        x-=speed;
-    }
-    if(keyIsDown(RIGHT_ARROW)) {
-        x+=speed;
-    }
+c
     if(x===0||x===width-100||y===0||y===height-100) {
         background("red");
         // if(!soundEffect.isPlaying()) {
