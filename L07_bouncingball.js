@@ -1,4 +1,6 @@
 let picoImage;
 let popSound;
 
-function preload() 
+function preload() {
+    pic
+}
