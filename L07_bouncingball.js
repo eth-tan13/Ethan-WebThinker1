@@ -28,7 +28,8 @@ function draw(){
         x+=5;
     }
 
-    x=constrain(x,y,)
+    x=constrain(x,0,width);
+    
 
     image(picoImage,x,y,100,100);
 }
