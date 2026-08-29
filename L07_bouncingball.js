@@ -12,7 +12,7 @@ function setup() {
 
 function draw(){
     background("gray");
-    image(picoImage,width/2,height/2,100,100);
+
 }
 
     if(keyIsDown(UP_ARROW)) {
