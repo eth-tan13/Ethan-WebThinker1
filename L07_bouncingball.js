@@ -14,7 +14,6 @@ function setup() {
 
 function draw(){
     background("gray");
-}
 
     if(keyIsDown(UP_ARROW)) {
         y-=5;
@@ -29,4 +28,5 @@ function draw(){
         x+=5;
     }
 
-image(picoImage,x,y,100,100)
+    image(picoImage,x,y,100,100);
+}
