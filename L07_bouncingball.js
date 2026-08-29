@@ -49,7 +49,8 @@
 // }
 
 let ballX=300;
-let ballY
+let ballY=200;
+let ballSize=
 
 function setup() {
     createCanvas(600,400);
