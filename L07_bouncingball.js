@@ -30,4 +30,4 @@ function draw(){
         x+=5;
     }
 
-image(picoImage,width/2,height/2,100,100)
+image(picoImage,x,y,100,100)
