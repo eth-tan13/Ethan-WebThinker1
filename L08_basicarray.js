@@ -18,6 +18,7 @@ function draw() {
     }
     if (squareY>=height-squareSize||squareY<=0) {
         squareSpeedY*=-1
+        fill(random(255),random(255),random(255))
     }
     rect(width/2,height/2,squareSize,squareSize);
 }
