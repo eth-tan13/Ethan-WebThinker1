@@ -37,4 +37,4 @@
 
 // }
 
-let favouriteFoods=["pizza",]
+let favouriteFoods=["pizza","burger","sushi",""]
