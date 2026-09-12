@@ -24,15 +24,17 @@
 //     rect(squareX,squareY,squareSize,squareSize);
 // }
 
-function setup() {
-    createCanvas(600,400);
-    background(220);
-    textSize(20);
-    textAlign(CENTER,CENTER)
-    text("My name is ")
-    text("We help you [core benefit] so you can [desired outcome].",width/2,height/2);
-}
+// function setup() {
+//     createCanvas(600,400);
+//     background(220);
+//     textSize(20);
+//     textAlign(CENTER,CENTER)
+//     text("My name is ")
+//     text("We help you [core benefit] so you can [desired outcome].",width/2,height/2);
+// }
 
-function draw() {
+// function draw() {
 
-}
+// }
+
+let 
