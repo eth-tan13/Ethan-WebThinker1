@@ -28,7 +28,7 @@ function setup() {
     createCanvas(600,400);
     background(220);
     textSize(40);
-    textAlign(SENTRE)
+    textAlign(CENTRE,CENTRE)
     text("We help you [core benefit] so you can [desired outcome].",width/2,height/2);
 }
 
