@@ -28,5 +28,5 @@ function setup() {
     createCanvas(600,400);
     background(220);
     textSize(40);
-    text("gay boy",width)
+    text("gay boy",width/2,height/2);
 }
