@@ -36,22 +36,22 @@
 
 // }
 
-// let favouriteFoods=["pizza","burger","sushi","tacos","pasta"];
+let favouriteFoods=["pizza","burger","sushi","tacos","pasta"];
 
-// function setup() {
-//     createCanvas(400,400);
-//     textSize(24);
-//     textAlign(LEFT,TOP);
-// }
+function setup() {
+    createCanvas(400,400);
+    textSize(24);
+    textAlign(LEFT,TOP);
+}
 
-// function draw() {
-//     background(220);
-//     fill(0);
-//     text("my favourite foods:",50,50);
-//     for(let i=0;i<favouriteFoods.length;i++) {
-//         text((i+1)+". "+favouriteFoods[i],50,80+i*30);
-//     }
-// }
+function draw() {
+    background(220);
+    fill(0);
+    text("my favourite foods:",50,50);
+    for(let i=0;i<favouriteFoods.length;i++) {
+        text((i+1)+". "+favouriteFoods[i],50,80+i*30);
+    }
+}
 
 let yPos;
 
