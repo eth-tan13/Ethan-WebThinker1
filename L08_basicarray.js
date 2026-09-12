@@ -16,6 +16,6 @@ function draw() {
         squareSpeedX*=-1
         fill(random(255),random(255),random(255))
     }
-    if (squareY>=height-100)
+    if (squareY>=height-squareSize||squareY<=0)
     rect(width/2,height/2,squareSize,squareSize);
 }
