@@ -37,4 +37,4 @@
 
 // }
 
-let 
+let favouriteFoods=[]
