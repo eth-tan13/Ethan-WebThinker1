@@ -20,5 +20,6 @@ function draw() {
         squareSpeedY*=-1;
         fill(random(255),random(255),random(255));
     }
+    noStroke()
     rect(width/2,height/2,squareSize,squareSize);
 }
