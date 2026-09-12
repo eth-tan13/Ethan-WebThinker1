@@ -47,7 +47,6 @@ function draw() {
     fill(0);
     textSize(24);
     textAlign(CENTER,CENTER);
-    text("my favourite foods:",50,50);
     for(let i=0;i<favouriteFoods.length;i++) {
         text((i+1)+". "+favouriteFoods[i],width/2,yPos+i*50);
     }
