@@ -37,6 +37,7 @@
 // }
 
 let favouriteFoods=["pizza","burger","sushi","tacos","pasta"];
+let yPos;
 
 function setup() {
     createCanvas(400,400);
@@ -51,10 +52,4 @@ function draw() {
     for(let i=0;i<favouriteFoods.length;i++) {
         text((i+1)+". "+favouriteFoods[i],50,80+i*30);
     }
-}
-
-let yPos;
-
-function setup() {
-    createCanvas(600,400)
 }
