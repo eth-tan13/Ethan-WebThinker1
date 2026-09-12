@@ -4,6 +4,6 @@ function setup() {
 }
 
 function draw() {
-    fill()
+    fill(random(255))
     rect(width/2,height/2,100,100);
 }
