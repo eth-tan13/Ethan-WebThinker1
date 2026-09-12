@@ -20,10 +20,11 @@
 //         squareSpeedY*=-1;
 //         fill(random(255),random(255),random(255));
 //     }
-//     noStroke()
+//     noStroke();
 //     rect(squareX,squareY,squareSize,squareSize);
 // }
 
 function setup() {
-    createCanvas
+    createCanvas(600,400);
+
 }
