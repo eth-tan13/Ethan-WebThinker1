@@ -24,3 +24,6 @@
 //     rect(squareX,squareY,squareSize,squareSize);
 // }
 
+function setup() {
+    createCanvas
+}
