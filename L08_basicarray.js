@@ -1,4 +1,4 @@
-let ballX=300;
+let squareX=300;
 let ballY=200;
 let ballSize=50;
 let ballSpeedX=10;
