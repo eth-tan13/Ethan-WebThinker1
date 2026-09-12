@@ -12,7 +12,8 @@ function setup() {
 function draw() {
     squareX+=squareSpeedX
     squareY+=squareSpeedY
-    if (squareX>=width-100||squareX)
+    if (squareX>=width-100||squareX<=0)
+        
     fill(random(255),random(255),random(255))
     rect(width/2,height/2,100,100);
 }
