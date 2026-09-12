@@ -36,4 +36,8 @@
 
 // }
 
-let favouriteFoods=["pizza","burger","sushi","tacos","pasta"]
+let favouriteFoods=["pizza","burger","sushi","tacos","pasta"];
+
+function setup() {
+    
+}
