@@ -2,7 +2,7 @@ let squareX=300;
 let squareY=200;
 let squareSize=50;
 let squareSpeedX=10;
-let ballSpeedY=10;
+let squareSpeedY=10;
 
 function setup() {
     createCanvas(600,400);
