@@ -37,8 +37,7 @@
 // }
 
 let favouriteFoods=["pizza","burger","sushi","tacos","pasta"];
-let yPos;
-
+let yPos=400;
 function setup() {
     createCanvas(400,400);
 }
