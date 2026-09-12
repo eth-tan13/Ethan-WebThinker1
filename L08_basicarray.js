@@ -30,3 +30,5 @@ function setup() {
     textSize(40);
     text("We help you [core benefit] so you can [desired outcome].",width/2,height/2);
 }
+
+function
