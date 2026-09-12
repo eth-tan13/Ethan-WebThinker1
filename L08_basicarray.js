@@ -29,6 +29,7 @@ function setup() {
     background(220);
     textSize(20);
     textAlign(CENTER,CENTER)
+    text("")
     text("We help you [core benefit] so you can [desired outcome].",width/2,height/2);
 }
 
