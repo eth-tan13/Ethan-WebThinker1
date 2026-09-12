@@ -1,7 +1,7 @@
 let squareX=300;
-let ballY=200;
-let ballSize=50;
-let ballSpeedX=10;
+let squareY=200;
+let squareSize=50;
+let squareSpeedX=10;
 let ballSpeedY=10;
 
 function setup() {
