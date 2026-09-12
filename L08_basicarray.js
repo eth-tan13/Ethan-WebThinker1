@@ -1,6 +1,6 @@
 let squareX=300;
 let squareY=200;
-let squareSize=50;
+let squareSize=100;
 let squareSpeedX=10;
 let squareSpeedY=10;
 
