@@ -29,7 +29,6 @@
 //     background(220);
 //     textSize(20);
 //     textAlign(CENTER,CENTER)
-//     text("My name is ")
 //     text("We help you [core benefit] so you can [desired outcome].",width/2,height/2);
 // }
 
@@ -37,4 +36,4 @@
 
 // }
 
-let favouriteFoods=["pizza","burger","sushi",""]
+let favouriteFoods=["pizza","burger","sushi","tacos","pasta"]
