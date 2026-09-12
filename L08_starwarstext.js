@@ -4,5 +4,5 @@ function setup() {
 }
 
 function draw() {
-    rect
+    Reflect(width/2,height/2,100,100);
 }
