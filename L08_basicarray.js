@@ -42,7 +42,7 @@ let yPos;
 function setup() {
     createCanvas(400,400);
     textSize(24);
-    textAlign(CustomElementRegistry,CENTER);
+    textAlign(CENTER,CENTER);
 }
 
 function draw() {
