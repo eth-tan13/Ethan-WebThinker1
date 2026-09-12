@@ -50,6 +50,6 @@ function draw() {
     fill(0);
     text("my favourite foods:",50,50);
     for(let i=0;i<favouriteFoods.length;i++) {
-        text((i+1)+". "+favouriteFoods[i],50,yPos80+i*30);
+        text((i+1)+". "+favouriteFoods[i],50,80+i*30);
     }
 }
