@@ -21,5 +21,5 @@ function draw() {
         fill(random(255),random(255),random(255));
     }
     noStroke()
-    rect(width/2,height/2,squareSize,squareSize);
+    rect(squareX,squareY,squareSize,squareSize);
 }
