@@ -1,9 +1,10 @@
 let yPos;
 let storyText = [
-    "A long time ago in a galaxy far, ",
+    "A long time ago in a galaxy far,",
     "far away...",
     "",
     "EPISODE I",
+    "THE BEGGINING",
     
 ]
 
