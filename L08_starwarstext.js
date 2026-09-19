@@ -16,7 +16,7 @@ let storyText = [
 let bgMusic;
 
 function preload() {
-    bgMusic = loadSound
+    bgMusic = loadSound("assets/starwars")
 }
 
 function setup() {
