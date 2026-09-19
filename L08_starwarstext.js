@@ -25,7 +25,7 @@ function setup() {
 function draw() {
     background(0);
     for (let i=0;i<storyText.length;i++){
-        text("asd",width/2,yPos);
+        text("asd",width/2,yPos+i*50);
     }
     yPos-=1;
 }
