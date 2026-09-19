@@ -7,8 +7,9 @@ function setup() {
 }
 
 function draw() {
-    hour=hour()
+    hr=hour()
     minute=minute()
     second=second()
     text(hour,width/2,height/2)
+
 }
