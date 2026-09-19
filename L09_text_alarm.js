@@ -8,5 +8,6 @@ function setup() {
 
 function draw() {
     hour=hour()
+    minute=minute()
     
 }
