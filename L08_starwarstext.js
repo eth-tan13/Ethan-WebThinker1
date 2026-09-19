@@ -15,6 +15,9 @@ let storyText = [
 ];
 let bgMusic;
 
+function preload() {
+    bgMusic = loadSound
+}
 
 function setup() {
     createCanvas(600,400);
