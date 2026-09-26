@@ -4,14 +4,15 @@ let displayText="Your Name Here";
 function setup() {
     createCanvas(600,400);
     fill(0,255,255);
-    
+
     inputText=createInput();
     inputText.position(width/2,height/2);
     inputText.input(updateText);
 }
 
 function draw() {
-    backgraound(220);
+    background(220);
+    text9
 }
 
 function updateText() {
