@@ -60,8 +60,8 @@ function draw() {
 
 function mousePressed() {
     if(countdownStart===false){
-        let intervalId=setInterval(updateCountdown,1000);
         countdownStart=true
+        let intervalId=setInterval(updateCountdown,1000);
     }
 }
 
