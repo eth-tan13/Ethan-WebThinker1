@@ -43,7 +43,7 @@
 //     clearInterval(intervalId)
 // }
 
-let countdown = 5;
+let countdown;
 let intervalId;
 
 function setup() {
