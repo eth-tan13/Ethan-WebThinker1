@@ -13,5 +13,5 @@ function draw() {
 }
 
 function updateText() {
-    displayText
+    displayText=this.value()
 }
