@@ -59,7 +59,7 @@ function draw() {
 }
 
 function mousePressed() {
-    if
+    if(countdownStart===false)
     let intervalId=setInterval(updateCountdown,1000);
 }
 
