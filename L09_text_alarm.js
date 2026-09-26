@@ -35,6 +35,6 @@ function drawCircle(){
     circle(x,50,20);
     x+=10;
     if (x>200) {
-        
+        x=0;
     }
 }
