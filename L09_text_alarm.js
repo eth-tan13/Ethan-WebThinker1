@@ -42,3 +42,5 @@ function drawCircle(){
 function mousePressed() {
     clearInterval(intervalId)
 }
+
+let countdown;
