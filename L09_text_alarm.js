@@ -43,10 +43,6 @@
 //     clearInterval(intervalId)
 // }
 
-
-let countdown;
-let intervalId;
-
 let countdown = 5;
 let intervalId;
 
