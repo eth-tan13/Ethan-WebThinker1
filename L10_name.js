@@ -9,7 +9,7 @@ function setup() {
     inputText=createInput();
     let inputX=this.canvas.offsetLeft+(width/2)-80;
     let inputY=this.canvas.offsetTop+(height/2)-10;
-    inputText.position(width/2,height/2);
+    inputText.position(inputX,inputY);
     inputText.input(updateText);
 }
 
