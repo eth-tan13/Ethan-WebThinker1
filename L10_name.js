@@ -9,3 +9,7 @@ function setup() {
 function draw() {
     backgraound(220)
 }
+
+function updateText() {
+    
+}
