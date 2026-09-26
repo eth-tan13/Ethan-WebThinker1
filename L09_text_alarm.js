@@ -60,8 +60,8 @@ function draw() {
 
 function mousePressed() {
     if(countdownStart===false){
-        countdownStart=true
-        countdown=
+        countdownStart=true;
+        countdown=5;
         intervalId=setInterval(updateCountdown,1000);
     }
 }
@@ -69,7 +69,7 @@ function mousePressed() {
 function updateCountdown() {
     if (countdown<=0){
         countdown=0;
-        clearInterval(intervalId)
-        countdownStart=false
+        clearInterval(intervalId);
+        countdownStart=false;
     }
 }
