@@ -2,5 +2,6 @@ let inputText;
 let displayText="Your Name Here";
 
 function setup() {
-    createcanvas()
+    createcCanvas(600,400);
+
 }
