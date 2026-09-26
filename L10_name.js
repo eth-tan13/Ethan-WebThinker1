@@ -7,5 +7,5 @@ function setup() {
 }
 
 function draw() {
-    
+    backgraound(220)
 }
