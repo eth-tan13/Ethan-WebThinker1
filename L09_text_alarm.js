@@ -51,3 +51,8 @@ function setup() {
   textAlign(CENTER, CENTER);
   textSize(64);
 }
+
+function draw() {
+  background(220);
+  text(countdown, width / 2, height / 2);
+}
