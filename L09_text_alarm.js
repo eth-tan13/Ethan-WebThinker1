@@ -48,11 +48,24 @@ let intervalId;
 
 function setup() {
   createCanvas(400, 400);
+  let intervalId=setInterval(updateCountdown,1000);
   textAlign(CENTER, CENTER);
   textSize(64);
 }
 
 function draw() {
-  background(220);
+  background(0);
   text(countdown, width / 2, height / 2);
+}
+
+function mousePressed() {
+      let intervalId=setInterval(updateCountdown,1000);
+}
+
+function updateCountdown() {
+    countdown--;
+    if (countdown<=0){
+        countdown=0;
+        clearInterval(intervalId)
+    }
 }
