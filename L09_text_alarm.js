@@ -54,7 +54,7 @@ function setup() {
 }
 
 function draw() {
-  background(0);
+  background(220);
   text(countdown, width / 2, height / 2);
 }
 
