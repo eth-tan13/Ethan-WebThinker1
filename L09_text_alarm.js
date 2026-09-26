@@ -18,7 +18,30 @@
 //     text(timeString,width/2,height/2);
 // }
 
-?
+// let intervalId;
+// let x=0;
+
+// function setup() {
+//     createCanvas(600,400);
+//     intervalId=setInterval(drawCircle,1000)
+// }
+
+// function draw() {
+
+// }
+
+// function drawCircle(){
+//     clear();
+//     circle(x,50,20);
+//     x+=10;
+//     if (x>200) {
+//         x=0;
+//     }
+// }
+
+// function mousePressed() {
+//     clearInterval(intervalId)
+// }
 
 
 let countdown;
