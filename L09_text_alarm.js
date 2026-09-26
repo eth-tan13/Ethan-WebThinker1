@@ -45,3 +45,5 @@
 
 
 let countdown;
+let intervalId;
+
