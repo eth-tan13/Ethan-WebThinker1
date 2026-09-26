@@ -21,5 +21,6 @@
 let intervalId;
 
 function setup() {
-    createC
+    createCanvas(600,400);
+    
 }
