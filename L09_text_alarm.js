@@ -19,17 +19,22 @@
 // }
 
 let intervalId;
+let x=0;
 
 function setup() {
     createCanvas(600,400);
+    intervalId=setInterval(drawCircle,1000)
 }
 
 function draw() {
-    background(0);
+
 }
 
 function drawCircle(){
     clear();
     circle(x,50,20);
-    
+    x+=10;
+    if (x>200) {
+        
+    }
 }
