@@ -7,6 +7,7 @@ function setup() {
     textSize(40)
     textAlign(CENTER,CENTER)
     inputText=createInput();
+    let inputX
     inputText.position(width/2,height/2);
     inputText.input(updateText);
 }
