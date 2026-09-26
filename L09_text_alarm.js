@@ -48,7 +48,7 @@ let countdown;
 let intervalId;
 
 let countdown = 5;
-let intervalId = null; // Store the ID here
+let intervalId;
 
 function setup() {
   createCanvas(400, 400);
