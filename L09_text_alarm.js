@@ -30,5 +30,6 @@ function draw() {
 
 function drawCircle(){
     clear();
-    circle()
+    circle(x,50,20);
+    
 }
