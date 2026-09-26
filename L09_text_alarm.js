@@ -47,3 +47,11 @@
 let countdown;
 let intervalId;
 
+let countdown = 5;
+let intervalId = null; // Store the ID here
+
+function setup() {
+  createCanvas(400, 400);
+  textAlign(CENTER, CENTER);
+  textSize(64);
+}
