@@ -1,2 +1,6 @@
 let inputText;
-let displayText="Your"
+let displayText="Your Name Here";
+
+function setup() {
+    
+}
