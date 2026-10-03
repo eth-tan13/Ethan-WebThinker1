@@ -5,7 +5,7 @@ function setup() {
     adverbField=createInput()
     placeField=createInput()
 
-    nounField.position(width/2+,height*0.2+Y)
-    verbField.position(width/2+,height*0.2+offsetY+50)
+    nounField.position(width/2,height*0.2)
+    verbField.position(width/2,height*0.2+offsetY+50)
     verbField.position(width/2+offsetX,height*0.2+offsetY+50)
 }
