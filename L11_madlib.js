@@ -4,4 +4,6 @@ function setup() {
     adjectiveField=createInput()
     adverbField=createInput()
     placeField=createInput()
+
+    nounField.position
 }
