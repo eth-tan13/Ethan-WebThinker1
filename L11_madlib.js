@@ -1,3 +1,3 @@
 function setup() {
-    letinput
+    let inputX=this.canvas
 }
