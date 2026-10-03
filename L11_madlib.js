@@ -3,7 +3,8 @@ let verb;
 let adjective;
 let adverb;
 let place;
-let submitButton
+let submitButton;
+
 function setup() {
     createCanvas(600,600)
     nounField==createInput();
