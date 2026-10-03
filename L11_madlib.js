@@ -1,4 +1,6 @@
+
 function setup() {
+    createCanvas(600,600)
     nounField==createInput();
     verbField=createInput();
     adjectiveField=createInput();
