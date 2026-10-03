@@ -1,5 +1,7 @@
 let noun;
 let verb;
+let adjective;
+let adverb;
 let 
 function setup() {
     createCanvas(600,600)
