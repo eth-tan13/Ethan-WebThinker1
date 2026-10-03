@@ -15,5 +15,6 @@ function setup() {
 function draw(){
     background(200);
     text("Enter a noun:",width*0.2,height*0.2)
-    text("Enter a verb:",width*0.2,height*0.2+)
+    text("Enter a verb:",width*0.2,height*0.2+50)
+    text("Enter a noun:",width*0.2,height*0.2)
 }
