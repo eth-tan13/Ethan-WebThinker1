@@ -1,4 +1,6 @@
-let noun
+let noun;
+let verb;
+let 
 function setup() {
     createCanvas(600,600)
     nounField==createInput();
