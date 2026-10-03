@@ -37,5 +37,5 @@ function generateStory() {
     let adverb=adverbField.value();
     let place=placeField.value();
     let story= `A ${noun} is ${verb}ing.`;
-    console.log
+    console.log(story)
 }
