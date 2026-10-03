@@ -14,5 +14,5 @@ function setup() {
 
 function draw(){
     background(200);
-    Text()
+    text("Enter a noun:")
 }
