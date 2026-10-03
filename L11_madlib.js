@@ -32,5 +32,6 @@ function buttonExample() {
 
 function generateStory() {
     let noun=nounField.value();
-    let verb=verb
+    let verb=verbField.value();
+    let adja
 }
