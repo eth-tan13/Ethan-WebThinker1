@@ -12,7 +12,7 @@ function setup() {
     inputText.position(inputX,inputY);
     inputText.input(updateText);
     colourPicker=createColorPicker();
-    let colourX=this.canvas
+    let colourX=this.canvas.offsetLeft+(width)
 }
 
 function draw() {
