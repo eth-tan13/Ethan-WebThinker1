@@ -2,8 +2,8 @@ let nounField;
 let verbField;
 let adjectiveField;
 let adverbField;
-let place;
-let submitButton;
+let placeField;
+let submitButtonField;
 
 function setup() {
     createCanvas(600,600);
