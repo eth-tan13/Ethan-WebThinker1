@@ -5,5 +5,5 @@ function setup() {
     adverbField=createInput()
     placeField=createInput()
 
-    nounField.position(width/2+OffscreenCanvasRenderingContext2D,height)
+    nounField.position(width/2+offsetX,height)
 }
