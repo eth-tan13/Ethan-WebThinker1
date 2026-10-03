@@ -33,5 +33,5 @@ function buttonExample() {
 function generateStory() {
     let noun=nounField.value();
     let verb=verbField.value();
-    let adja
+    let adjective=adjectiveField
 }
