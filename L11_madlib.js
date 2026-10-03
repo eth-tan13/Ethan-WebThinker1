@@ -36,5 +36,5 @@ function generateStory() {
     let adjective=adjectiveField.value();
     let adverb=adverbField.value();
     let place=placeField.value();
-    
+    console.log(noun)
 }
