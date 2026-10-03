@@ -36,5 +36,5 @@ function generateStory() {
     let adjective=adjectiveField.value();
     let adverb=adverbField.value();
     let place=placeField.value();
-    let story= `A`
+    let story= `A ${noun} is `
 }
