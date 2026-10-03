@@ -1,3 +1,3 @@
 function setup() {
-    verbField=createI
+    verbField=createInput()
 }
