@@ -7,5 +7,5 @@ function setup() {
 
     nounField.position(width/2+offsetX,height*0.2+offsetY)
     verbField.position(width/2+offsetX,height*0.2+offsetY+50)
-
+    verbField.position(width/2+offsetX,height*0.2+offsetY+50)
 }
