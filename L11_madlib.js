@@ -12,7 +12,8 @@ function setup() {
     adverbField.position(width/2+offsetX,height*0.2+offsetY+150);
     placeField.position(width/2+offsetX,height*0.2+offsetY+200);
     submitButton=createButton("Generate Story");
-    submitButton.position
+    submitButton.position(width/2+offsetX,height*0.2+offsetY+250);
+    submitButton.mousePressed(buttonExample);
 }
 
 function draw(){
@@ -23,4 +24,8 @@ function draw(){
     text("Enter an adverb:",width*0.2,height*0.2+150);
     text("Enter a place:",width*0.2,height*0.2+200);
     console.log(nounField.value());
+}
+
+function buttonExample() {
+    console.log
 }
