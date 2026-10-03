@@ -39,5 +39,5 @@ function generateStory() {
     console.log(noun);
     console.log(verb);
     console.log(adjective);
-    
+    console.log(adverb;)
 }
