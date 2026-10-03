@@ -1,5 +1,5 @@
-let noun;
-let verb;
+let nounField;
+let verbField;
 let adjective;
 let adverb;
 let place;
