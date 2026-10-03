@@ -13,7 +13,7 @@ function setup() {
     placeField.position(width/2+offsetX,height*0.2+offsetY+200);
     submitButton=createButton("Generate Story");
     submitButton.position(width/2+offsetX,height*0.2+offsetY+250);
-    submitButton.mousePressed(buttonExample);
+    submitButton.mousePressed(generateStory);
 }
 
 function draw(){
@@ -31,5 +31,5 @@ function buttonExample() {
 }
 
 function generateStory() {
-    
+    let noun=nounField
 }
