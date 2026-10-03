@@ -9,5 +9,5 @@ function setup() {
     verbField.position(width/2+offsetX,height*0.2+offsetY+50)
     adjectiveField.position(width/2+offsetX,height*0.2+offsetY+100)
     adverbField.position(width/2+offsetX,height*0.2+offsetY+150)
-    verbField.position(width/2+offsetX,height*0.2+offsetY+50)
+    placeField.position(width/2+offsetX,height*0.2+offsetY+200)
 }
