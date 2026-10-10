@@ -11,7 +11,7 @@ function setup() {
     inputText.position(inputX,inputY);
     inputText.input(updateText);
     colourPicker=createColorPicker();
-    let colourX=this.canvas.offsetLeft+(width/2)-20;
+    let offsetX=this.canvas.offsetLeft
     let colourY=this.canvas.offsetTop+(height*0.7);
     colourPicker.position(colourX,colourY);
     submitButton=createButton("Guess");
