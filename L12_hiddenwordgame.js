@@ -7,7 +7,7 @@ function setup() {
     textAlign(CENTER,CENTER)
     inputText=createInput();
     let offsetX=this.canvas.offsetLeft
-    let inputY=this.canvas.offsetTop
+    let offsetY=this.canvas.offsetTop
     inputText.position(inputX,inputY);
     inputText.input(updateText);
     submitButton=createButton("Guess");
