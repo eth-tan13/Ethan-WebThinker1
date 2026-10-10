@@ -16,7 +16,7 @@ function setup() {
 }
 
 function draw() {
-    text(displayText,width/2,height*0.3)
+    text(width/2+offsetX,height/2+offsetY)
 }
 
 function updateText() {
