@@ -1,4 +1,4 @@
-let inputText;
+let textField;
 
 function setup() {
     createCanvas(600,400);
