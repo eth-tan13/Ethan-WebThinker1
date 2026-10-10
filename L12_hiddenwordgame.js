@@ -44,7 +44,9 @@ function submitGuess() {
 }
 
 function correctGuess(guess,word) {
-    
+    for(let i=0;i<word.length;i++) {
+        if(word.includes(guess[i])){}
+    }
 }
 
 function updateText() {
