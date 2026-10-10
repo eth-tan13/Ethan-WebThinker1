@@ -21,7 +21,8 @@ function draw() {
 
 function submitGuess() {
     let inputText=textField.value();
-    
+    fill(0);
+    textSize()
 }
 
 function updateText() {
