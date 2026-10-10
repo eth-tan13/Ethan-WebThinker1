@@ -1,7 +1,7 @@
 let textField;
 let submitButton;
 
-let wordArray = ["banana","potato","apple","orange"]
+let wordArray = ["banana","potato","apple","orange"];
 
 function setup() {
     createCanvas(600,400);
