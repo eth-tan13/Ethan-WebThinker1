@@ -7,8 +7,8 @@ function setup() {
     textAlign(CENTER,CENTER);
     textField=createInput();
     let offsetX=this.canvas.offsetLeft;
-    let inputY=this.canvas.offsetTop;
-    textField.position(width/2+offset-80,height/2+offsetY);
+    let offsetY=this.canvas.offsetTop;
+    textField.position(width/2+offsetX-80,height/2+offsetY);
     textField.size(150,30);
     textField.style("background-color","lightblue");
     textField.style("font-size","20px");
