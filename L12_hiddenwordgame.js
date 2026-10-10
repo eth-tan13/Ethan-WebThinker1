@@ -1,11 +1,11 @@
 let textField;
 let submitButton;
 
-let wordArray = ["banana","potato","apple",""]
+let wordArray = ["banana","potato","apple","orange"]
 
 function setup() {
     createCanvas(600,400);
-    background(220);
+    background(100);
     textSize(40);
     textAlign(CENTER,CENTER);
     textField=createInput();
