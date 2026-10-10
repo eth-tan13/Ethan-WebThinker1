@@ -15,5 +15,6 @@ function setup() {
 }
 
 function draw() {
-
+    background(colourPicker.value());
+    text(displayText,width/2,height*0.3)
 }
