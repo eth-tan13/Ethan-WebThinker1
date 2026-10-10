@@ -25,7 +25,7 @@ function setup() {
     submitButton.position(width/2+offsetX+100,height/2+offsetY);
     submitButton.mousePressed(submitGuess);
     randomWord=random(wordArray);
-    displayHint=randomWord[0].toUpperCase()
+    displayHint=randomWord[0].toUpperCase()+" "+"_"
 }
 
 function draw() {
