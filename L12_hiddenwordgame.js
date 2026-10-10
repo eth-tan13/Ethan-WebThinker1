@@ -1,6 +1,17 @@
 function setup() {
     createCanvas(600,400);
     background(220);
+    textSize(40)
+    textAlign(CENTER,CENTER)
+    inputText=createInput();
+    let inputX=this.canvas.offsetLeft+(width/2)-80;
+    let inputY=this.canvas.offsetTop+(height/2)-10;
+    inputText.position(inputX,inputY);
+    inputText.input(updateText);
+    colourPicker=createColorPicker();
+    let colourX=this.canvas.offsetLeft+(width/2)-20;
+    let colourY=this.canvas.offsetTop+(height*0.7);
+    colourPicker.position(colourX,colourY);
 }
 
 function draw() {
