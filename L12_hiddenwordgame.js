@@ -28,7 +28,8 @@ function setup() {
     displayHint=randomWord[0].toUpperCase()+" "+"_ ".repeat(randomWord.length)
     fill(0);
     textSize(28);
-    
+    textAlign(CENTER,CENTER);
+    text()
 }
 
 function draw() {
