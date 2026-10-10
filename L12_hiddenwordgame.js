@@ -5,10 +5,10 @@ function setup() {
     background(220);
     textSize(40)
     textAlign(CENTER,CENTER)
-    inputText=createInput();
+    textFieldt=createInput();
     let inputX=this.canvas.offsetLeft
     let inputY=this.canvas.offsetTop
-    inputText.position(width/2+offset-80,height/2+offsetY);
+    textField.position(width/2+offset-80,height/2+offsetY);
     inputText.input(updateText);
     submitButton=createButton("Guess");
     submitButton.position(width/2+offsetX+100,height/2+offsetY+250);
