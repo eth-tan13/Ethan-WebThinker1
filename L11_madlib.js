@@ -7,7 +7,7 @@ let submitButtonField;
 
 function setup() {
     createCanvas(600,600);
-    nounField==createInput();
+    nounField=createInput();
     verbField=createInput();
     adjectiveField=createInput();
     adverbField=createInput();
