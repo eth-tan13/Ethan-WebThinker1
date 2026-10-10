@@ -18,3 +18,8 @@ function draw() {
     background(colourPicker.value());
     text(displayText,width/2,height*0.3)
 }
+
+function updateText() {
+    displayText=this.value();
+    console.log(displayText);
+}
