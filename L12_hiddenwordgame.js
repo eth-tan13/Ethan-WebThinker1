@@ -12,7 +12,7 @@ function setup() {
     textField.input(updateText);
     submitButton=createButton("Guess");
     submitButton.position(width/2+offsetX+100,height/2+offsetY);
-    submitButton.mousePressed();
+    submitButton.mousePressed(submitGuess);
 }
 
 function draw() {
