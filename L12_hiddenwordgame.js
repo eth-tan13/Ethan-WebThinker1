@@ -42,6 +42,7 @@ function submitGuess() {
     textSize(28);
     text(inputText,width/2,height/3);
     let letters=correctGuess(inputText,randomWord);
+    console.log
 }
 
 function correctGuess(guess,word) {
