@@ -51,7 +51,7 @@ function correctGuess(guess,word) {
             correctLetters+=guess[i];
         }
     }
-    return
+    return correctLetters;
 }
 
 function updateText() {
