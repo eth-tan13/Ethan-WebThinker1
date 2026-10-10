@@ -6,17 +6,18 @@ function setup() {
     textSize(40)
     textAlign(CENTER,CENTER)
     inputText=createInput();
-    let offsetX=this.canvas.offsetLeft
-    let offsetY=this.canvas.offsetTop
-    inputText.position(width/2+offset-80,height/2+offsetY);
+    let inputX=this.canvas.offsetLeft
+    let inputY=this.canvas.offsetTop
+    inputText.position(inputX,inputY);
     inputText.input(updateText);
     submitButton=createButton("Guess");
-    submitButton.position(width/2+offsetX,height/2+offsetY);
+    submitButton.position(width/2+offsetX,height/2+offsetY+250);
     submitButton.mousePressed(generateStory);
 }
 
 function draw() {
-    text(width/2+offsetX,height/2+offsetY)
+    background(colourPicker.value());
+    text(displayText,width/2,height*0.3)
 }
 
 function updateText() {
