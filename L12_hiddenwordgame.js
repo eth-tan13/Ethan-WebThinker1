@@ -1,3 +1,4 @@
+
 function setup() {
     createCanvas(600,400);
     background(220);
@@ -12,7 +13,7 @@ function setup() {
     let colourX=this.canvas.offsetLeft+(width/2)-20;
     let colourY=this.canvas.offsetTop+(height*0.7);
     colourPicker.position(colourX,colourY);
-    submitButton=createButton("Generate Story");
+    submitButton=createButton("Guess");
     submitButton.position(width/2+offsetX,height*0.2+offsetY+250);
     submitButton.mousePressed(generateStory);
 }
