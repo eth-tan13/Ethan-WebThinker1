@@ -1,5 +1,7 @@
 let textField;
 let submitButton;
+let randomWord;
+let displayHint;
 
 let wordArray = ["banana","potato","apple","orange"];
 
@@ -23,7 +25,7 @@ function setup() {
     submitButton.position(width/2+offsetX+100,height/2+offsetY);
     submitButton.mousePressed(submitGuess);
     randomWord=random(wordArray);
-    displayHint
+    displayHint=randomWord[0]
 }
 
 function draw() {
