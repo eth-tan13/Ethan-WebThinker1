@@ -6,11 +6,10 @@ function setup() {
     textSize(40)
     textAlign(CENTER,CENTER)
     inputText=createInput();
-    let inputX=this.canvas.offsetLeft+(width/2)-80;
+    let inputX=this.canvas.offsetLeft
     let inputY=this.canvas.offsetTop+(height/2)-10;
     inputText.position(inputX,inputY);
     inputText.input(updateText);
-    colourPicker.position(colourX,colourY);
     submitButton=createButton("Guess");
     submitButton.position(width/2+offsetX,height*0.2+offsetY+250);
     submitButton.mousePressed(generateStory);
