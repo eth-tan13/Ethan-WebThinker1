@@ -27,6 +27,7 @@ function setup() {
     randomWord=random(wordArray);
     displayHint=randomWord[0].toUpperCase()+" "+"_ ".repeat(randomWord.length)
     fill(0);
+    textSize(28);
     
 }
 
