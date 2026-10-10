@@ -10,7 +10,7 @@ function setup() {
     let inputY=this.canvas.offsetTop;
     textField.position(width/2+offset-80,height/2+offsetY);
     textField.size(150,30);
-    textField.
+    textField.style("")
     textField.input(updateText);
     submitButton=createButton("Guess");
     submitButton.position(width/2+offsetX+100,height/2+offsetY);
