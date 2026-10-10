@@ -24,7 +24,7 @@ function submitGuess() {
     fill(0);
     textSize(28);
     text(inputText,width/2,height/3);
-
+}
 
 function updateText() {
     displayText=this.value();
