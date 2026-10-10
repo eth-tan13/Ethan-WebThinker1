@@ -31,6 +31,7 @@ function setup() {
     textAlign(CENTER,CENTER);
     text("Hint: "+displayHint,width/2,height*0.4)
 }
+
 function draw() {
 
 }
@@ -40,6 +41,10 @@ function submitGuess() {
     fill(0);
     textSize(28);
     text(inputText,width/2,height/3);
+}
+
+function correctGuess() {
+    
 }
 
 function updateText() {
