@@ -8,7 +8,7 @@ function setup() {
     inputText=createInput();
     let offsetX=this.canvas.offsetLeft
     let offsetY=this.canvas.offsetTop
-    inputText.position(inputX,inputY);
+    inputText.position(width/2+offset);
     inputText.input(updateText);
     submitButton=createButton("Guess");
     submitButton.position(width/2+offsetX,height/2+offsetY);
