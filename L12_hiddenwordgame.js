@@ -11,12 +11,11 @@ function setup() {
     inputText.position(inputX,inputY);
     inputText.input(updateText);
     submitButton=createButton("Guess");
-    submitButton.position(width/2+offsetX,height/2+offsetY+250);
+    submitButton.position(width/2+offsetX,height/2+offsetY);
     submitButton.mousePressed(generateStory);
 }
 
 function draw() {
-    background(colourPicker.value());
     text(displayText,width/2,height*0.3)
 }
 
