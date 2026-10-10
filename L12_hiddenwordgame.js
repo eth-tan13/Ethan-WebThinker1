@@ -9,7 +9,7 @@ function setup() {
     let inputX=this.canvas.offsetLeft
     let inputY=this.canvas.offsetTop
     textField.position(width/2+offset-80,height/2+offsetY);
-    inputText.input(updateText);
+    textField.input(updateText);
     submitButton=createButton("Guess");
     submitButton.position(width/2+offsetX+100,height/2+offsetY+250);
     submitButton.mousePressed(generateStory);
