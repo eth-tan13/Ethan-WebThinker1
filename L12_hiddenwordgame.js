@@ -6,8 +6,8 @@ function setup() {
     textSize(40);
     textAlign(CENTER,CENTER);
     textFieldt=createInput();
-    let inputX=this.canvas.offsetLeft
-    let inputY=this.canvas.offsetTop
+    let inputX=this.canvas.offsetLeft;
+    let inputY=this.canvas.offsetTop;
     textField.position(width/2+offset-80,height/2+offsetY);
     textField.input(updateText);
     submitButton=createButton("Guess");
@@ -20,7 +20,7 @@ function draw() {
 }
 
 function submitGuess() {
-    
+
 }
 
 function updateText() {
