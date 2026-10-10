@@ -11,7 +11,7 @@ function setup() {
     inputText.position(inputX,inputY);
     inputText.input(updateText);
     submitButton=createButton("Guess");
-    submitButton.position(width/2+offsetX,height*0.2+offsetY+250);
+    submitButton.position(width/2+offsetX,height/2+offsetY+250);
     submitButton.mousePressed(generateStory);
 }
 
