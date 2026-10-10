@@ -12,7 +12,7 @@ function setup() {
     textField.size(150,30);
     textField.style("background-color","lightblue");
     textField.style("font-size","20px")
-    textField.style("border","1px")
+    textField.style("border","1px solid black")
     textField.input(updateText);
     submitButton=createButton("Guess");
     submitButton.position(width/2+offsetX+100,height/2+offsetY);
