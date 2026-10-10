@@ -22,6 +22,7 @@ function setup() {
     submitButton=createButton("Guess");
     submitButton.position(width/2+offsetX+100,height/2+offsetY);
     submitButton.mousePressed(submitGuess);
+    randomWord=random
 }
 
 function draw() {
