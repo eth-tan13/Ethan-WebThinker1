@@ -5,7 +5,7 @@ function setup() {
     background(220);
     textSize(40);
     textAlign(CENTER,CENTER);
-    textFieldt=createInput();
+    textField=createInput();
     let inputX=this.canvas.offsetLeft;
     let inputY=this.canvas.offsetTop;
     textField.position(width/2+offset-80,height/2+offsetY);
