@@ -1,3 +1,4 @@
 let playerX=100;
 let playerY;
-let playerS
+let playerSize=30;
+let velocity=0;
