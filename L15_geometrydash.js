@@ -43,7 +43,9 @@ function draw(){
                 playerX+playerSize>spikesX[i]&&
                 playerX<spikesX[i]+spikeWidth&&
                 playerY+playerSize>height-spikeHeight
-            )
+            ){
+                gameOver=true
+            }
         }
     } else{
         fill(255,0,0);
