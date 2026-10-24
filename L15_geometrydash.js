@@ -33,7 +33,7 @@ function draw(){
     for(let i=0;i<spikesX.length;i++){
         spikesX[i]-=spikeSpeed;
         if(spikesX[i]<-spikeWidth){
-            spikesX[i]=width+RTCEncodedAudioFrame(100,300)
+            spikesX[i]=width+random(100,300);
         }
     }
 }
