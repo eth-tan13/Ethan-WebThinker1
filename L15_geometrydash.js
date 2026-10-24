@@ -16,7 +16,8 @@ function draw(){
     playerY+=velocity;
     if (playerY>=height-playerSize){
         playerY=height-playerSize;
-        
+        isGrounded=true;
+        velocity
     }
     fill(255,255,0)
     rect(playerX,playerY,playerSize,playerSize);
