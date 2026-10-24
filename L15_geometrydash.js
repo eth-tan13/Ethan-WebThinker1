@@ -14,6 +14,5 @@ function draw(){
     background(0);
     fill(255,255,0)
     rect(playerX,playerY,playerSize,playerSize);
-
-    
+    velocity
 }
