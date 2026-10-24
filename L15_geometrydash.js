@@ -1,1 +1,3 @@
-let playerX=100
+let playerX=100;
+let playerY;
+let playerS
