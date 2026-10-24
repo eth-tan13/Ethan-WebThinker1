@@ -12,8 +12,9 @@ function setup(){
 
 function draw(){
     background(0);
+    velocity+=0.8;
+    playerY+=velocity;
+    if 
     fill(255,255,0)
     rect(playerX,playerY,playerSize,playerSize);
-    velocity+=0.8;
-    playerY
 }
