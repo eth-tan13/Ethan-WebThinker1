@@ -11,5 +11,6 @@ function setup(){
 }
 
 function draw(){
-    b
+    background(0);
+    
 }
