@@ -12,5 +12,6 @@ function setup(){
 
 function draw(){
     background(0);
-    Reflect(playerX,playerY,)
+    Reflect(playerX,playerY,playerSize,playerSize);
+    
 }
