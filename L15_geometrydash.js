@@ -3,9 +3,9 @@ let playerY;
 let playerSize=30;
 let velocity=0;
 let isGrounded=false;
-letspikesX=[]
-letspikeWidth=20;
-let
+let spikesX=[]
+let spikeWidth=20;
+let spikeSpeed=
 
 function setup(){
     createCanvas(600,400);
