@@ -10,3 +10,6 @@ function setup(){
     playerY=height-playerSize;
 }
 
+function draw(){
+    b
+}
