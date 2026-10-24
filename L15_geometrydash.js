@@ -19,7 +19,7 @@ function setup(){
 
 function draw(){
     background(0);
-    if(!gameover){
+    if(!gameOver){
         
     }
     velocity+=0.8;
