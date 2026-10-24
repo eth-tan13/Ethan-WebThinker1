@@ -11,6 +11,8 @@ function setup(){
     createCanvas(600,400);
     textAlign(CENTER,CENTER);
     playerY=height-playerSize;
+    for (let i=0;i<3;i++);
+    
 }
 
 function draw(){
