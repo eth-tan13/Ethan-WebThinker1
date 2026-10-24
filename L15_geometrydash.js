@@ -4,6 +4,7 @@ let playerSize=30;
 let velocity=0;
 let isGrounded=false;
 letspikesX=[]
+letspikeWidth=20;
 let
 
 function setup(){
