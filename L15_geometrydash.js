@@ -29,8 +29,9 @@ function draw(){
     }
     fill(255,255,0)
     rect(playerX,playerY,playerSize,playerSize);
+    fill(255,0,0);
 }
 
 function keyPressed(){
-    
+
 }
