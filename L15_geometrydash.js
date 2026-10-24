@@ -3,6 +3,7 @@ let playerY;
 let playerSize=30;
 let velocity=0;
 let isGrounded=false;
+letspikes
 
 function setup(){
     createCanvas(600,400);
