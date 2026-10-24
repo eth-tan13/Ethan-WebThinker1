@@ -19,7 +19,9 @@ function setup(){
 
 function draw(){
     background(0);
-    if(!ganme)
+    if(!gameover){
+        
+    }
     velocity+=0.8;
     playerY+=velocity;
     if (playerY>=height-playerSize){
