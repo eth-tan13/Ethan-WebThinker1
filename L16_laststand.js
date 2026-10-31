@@ -171,6 +171,10 @@ function updateZombieEffects(zombie, elapsed) {
   zombie.frozenFor = Math.max(0, zombie.frozenFor - elapsed);
   zombie.stunnedFor = Math.max(0, zombie.stunnedFor - elapsed);
   for (const effect of zombie.damageEffects) {
+    if (zombie.kind === "molten" && effect.kind === "burn") {
+      effect.timeLeft = 0;
+      continue;
+    }
     effect.timeLeft -= elapsed;
     effect.timeUntilTick -= elapsed;
     while (effect.timeUntilTick <= 0 && effect.timeLeft > 0 && !zombie.dead) {
@@ -508,7 +512,12 @@ function drawActors() {
     const burning = zombie.damageEffects.some((effect) => effect.kind === "burn");
     const poisoned = zombie.damageEffects.some((effect) => effect.kind === "poison");
     noStroke();
-    fill(frozen ? "#75d9ed" : burning ? "#e9683f" : poisoned ? "#7eb94c" : "#78915e");
+    const bodyTint = zombie.kind === "molten"
+      ? "#ed843d"
+      : zombie.kind === "fallen"
+        ? "#b36d86"
+        : frozen ? "#75d9ed" : burning ? "#e9683f" : poisoned ? "#7eb94c" : "#78915e";
+    fill(bodyTint);
     ellipse(x, y, size, size);
     fill("#344a35");
     ellipse(x - size * 0.2, y - size * 0.13, size * 0.2, size * 0.24);
@@ -604,9 +613,9 @@ function drawHud() {
   rect(0, 0, width, 48);
   textAlign(LEFT, CENTER);
   fill("#f3ead8");
-  textSize(14);
+  textSize(13);
   textStyle(BOLD);
-  text(`WAVE ${String(waveNumber).padStart(2, "0")} / ${LAST_WAVE}`, 20, 18);
+  text(`${currentModeSettings().name} ${String(waveNumber).padStart(2, "0")}/${currentModeSettings().waves}`, 20, 18);
   textStyle(NORMAL);
   fill("#82908a");
   text(`${zombies.length} INCOMING`, 20, 36);
@@ -669,19 +678,62 @@ function drawTitleScreen() {
   textAlign(CENTER, CENTER);
   fill("#f1e7d4");
   textStyle(BOLD);
-  textSize(Math.min(56, width * 0.09));
-  text("LAST STAND", width / 2, height * 0.29);
+  textSize(Math.min(52, width * 0.09));
+  text("LAST STAND", width / 2, height * 0.21);
   textStyle(NORMAL);
   fill("#e17358");
   textSize(13);
-  text("AFTER DARK, THE STREETS BELONG TO THEM", width / 2, height * 0.38);
+  text("AFTER DARK, THE STREETS BELONG TO THEM", width / 2, height * 0.3);
   fill("#b1bdb4");
-  textSize(14);
-  text("WASD to move   /   Click to fire   /   Choose upgrades between waves", width / 2, height * 0.48);
-  drawButton("ENTER THE NIGHT", width / 2 - 112, height * 0.59, 224, 52);
-  fill("#77857d");
   textSize(11);
-  text("SURVIVE EIGHT WAVES. KEEP MOVING.", width / 2, height * 0.72);
+  text("SELECT MODE  /  PRESS 1, 2, OR 3", width / 2, height * 0.39);
+  drawModeCards();
+  drawButton(`START ${currentModeSettings().name}`, width / 2 - 112, titleStartY(), 224, 46);
+  fill("#77857d");
+  textSize(10);
+  text("WASD MOVE  /  CLICK FIRE  /  UPGRADE BETWEEN WAVES", width / 2, height * 0.84);
+}
+
+function getModeCards() {
+  const gap = 10;
+  const cardWidth = Math.min(220, (width - 48 - gap * 2) / 3);
+  const cardHeight = 76;
+  const firstX = (width - (cardWidth * 3 + gap * 2)) / 2;
+  const y = height * 0.45;
+  return Object.keys(MODE_SETTINGS).map((mode, index) => ({
+    mode,
+    x: firstX + index * (cardWidth + gap),
+    y,
+    width: cardWidth,
+    height: cardHeight
+  }));
+}
+
+function titleStartY() {
+  return height * 0.67;
+}
+
+function drawModeCards() {
+  for (const card of getModeCards()) {
+    const settings = MODE_SETTINGS[card.mode];
+    fill("#1b2723");
+    stroke(selectedMode === card.mode ? settings.tint : "#45534b");
+    strokeWeight(selectedMode === card.mode ? 2 : 1);
+    rect(card.x, card.y, card.width, card.height, 4);
+    noStroke();
+    fill(settings.tint);
+    textAlign(CENTER, CENTER);
+    textStyle(BOLD);
+    textSize(12);
+    text(settings.name, card.x + card.width / 2, card.y + 19);
+    textStyle(NORMAL);
+    fill("#e1e6dd");
+    textSize(10);
+    text(`${settings.waves} WAVES`, card.x + card.width / 2, card.y + 39);
+    fill("#8e9b91");
+    textSize(9);
+    text(settings.note, card.x + card.width / 2, card.y + 59);
+  }
 }
 
 function drawUpgradeScreen() {
@@ -738,7 +790,7 @@ function drawEndScreen(victory) {
   textStyle(NORMAL);
   fill("#aebbb2");
   textSize(14);
-  text(victory ? "Eight waves survived. The district is quiet." : `You cleared ${defeatedCount} infected. The street goes dark.`, width / 2, height * 0.46);
+  text(victory ? `${currentModeSettings().waves} waves survived. The district is quiet.` : `You cleared ${defeatedCount} infected. The street goes dark.`, width / 2, height * 0.46);
   drawButton("RUN IT BACK", width / 2 - 100, height * 0.57, 200, 48);
   fill("#79877e");
   textSize(11);
@@ -766,7 +818,12 @@ function drawButton(label, x, y, buttonWidth, buttonHeight) {
 
 function mousePressed() {
   if (gameMode === "title") {
-    if (mouseY > height * 0.55 && mouseY < height * 0.7) restartGame();
+    const clickedCard = getModeCards().find((card) =>
+      mouseX >= card.x && mouseX <= card.x + card.width &&
+      mouseY >= card.y && mouseY <= card.y + card.height
+    );
+    if (clickedCard) selectedMode = clickedCard.mode;
+    else if (mouseY >= titleStartY() && mouseY <= titleStartY() + 46) restartGame();
     return false;
   }
   if (gameMode === "playing") {
@@ -796,7 +853,10 @@ function mousePressed() {
 }
 
 function keyPressed() {
-  if (key === "r" || key === "R") restartGame();
+  if (gameMode === "title" && key >= "1" && key <= "3") {
+    selectedMode = Object.keys(MODE_SETTINGS)[Number(key) - 1];
+  }
+  else if (key === "r" || key === "R") restartGame();
   else if (gameMode === "title" && (keyCode === ENTER || keyCode === 32)) restartGame();
   else if (gameMode === "upgrade" && key >= "1" && key <= "3") chooseUpgrade(Number(key) - 1);
   else if ((gameMode === "lost" || gameMode === "won") && keyCode === ENTER) restartGame();
