@@ -195,7 +195,9 @@ function updateBullets(elapsed) {
       } else {
         damageZombie(target, bullet.damage);
         if (bullet.kind === "poison") applyDamageEffect(target, "poison", 4, 0.8, 3 + bullet.rank);
-        if (bullet.kind === "fire") applyDamageEffect(target, "burn", 3.2, 0.65, 4 + bullet.rank);
+        if (bullet.kind === "fire" && target.kind !== "molten") {
+          applyDamageEffect(target, "burn", 3.2, 0.65, 4 + bullet.rank);
+        }
         addBurst(bullet.x, bullet.y, 26, bullet.kind === "poison" ? POWER_INFO.poison.tint : POWER_INFO.fire.tint, 0.22);
       }
       bullet.timeLeft = 0;
@@ -257,7 +259,7 @@ function updateWave(elapsed) {
   if (zombies.length > 0 || gameMode !== "playing") return;
   waveBreak -= elapsed;
   if (waveBreak <= 0) {
-    if (waveNumber >= LAST_WAVE) {
+    if (waveNumber >= currentModeSettings().waves) {
       gameMode = "won";
       return;
     }
@@ -267,25 +269,38 @@ function updateWave(elapsed) {
 }
 
 function launchWave() {
-  enemiesRemaining = 5 + waveNumber * 3;
+  const normalCount = 8 + waveNumber * 4;
+  const moltenCount = selectedMode === "molten" && waveNumber >= 11
+    ? 1 + Math.floor((waveNumber - 11) / 4)
+    : 0;
+  const fallenCount = selectedMode === "fallen" && waveNumber >= 16
+    ? 2 + Math.floor((waveNumber - 16) / 4)
+    : 0;
+  enemiesRemaining = normalCount + moltenCount + fallenCount;
   waveBreak = 2.4;
   waveBanner = 2.1;
-  for (let index = 0; index < enemiesRemaining; index++) spawnZombie();
+  for (let index = 0; index < normalCount; index++) spawnZombie("normal");
+  for (let index = 0; index < moltenCount; index++) spawnZombie("molten");
+  for (let index = 0; index < fallenCount; index++) spawnZombie("fallen");
 }
 
-function spawnZombie() {
+function spawnZombie(kind) {
   const angle = random(TWO_PI);
   const distance = Math.max(width, height) * random(0.62, 0.82);
   const x = constrain(survivor.body.x + Math.cos(angle) * distance, 24, width - 24);
   const y = constrain(survivor.body.y + Math.sin(angle) * distance, 58, height - 24);
-  const size = random(25, 34);
+  const size = kind === "molten" ? random(30, 36) : random(25, 34);
   const actor = makeBody(x, y, size);
+  const baseHealth = 28 + waveNumber * 7;
+  const health = kind === "fallen" ? Math.round(baseHealth * 3.5) : baseHealth;
+  const baseSpeed = random(38, 55) + waveNumber * 2.2;
   zombies.push({
     body: actor.body,
+    kind,
     size,
-    health: 28 + waveNumber * 7,
-    maxHealth: 28 + waveNumber * 7,
-    speed: random(38, 55) + waveNumber * 2.2,
+    health,
+    maxHealth: health,
+    speed: kind === "fallen" ? baseSpeed * 2.2 : baseSpeed,
     frozenFor: 0,
     stunnedFor: 0,
     damageEffects: [],
