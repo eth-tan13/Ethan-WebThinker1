@@ -616,6 +616,16 @@ function drawHud() {
     powerX += textWidth(`${POWER_INFO[name].title.toUpperCase()}  ${powerRanks[name]}`) + 22;
   }
 
+  fill("#1d2926");
+  stroke("#56645c");
+  strokeWeight(1);
+  rect(width - 92, height - 44, 78, 26, 3);
+  noStroke();
+  fill("#d9e0d8");
+  textAlign(CENTER, CENTER);
+  textSize(10);
+  text("RESTART  R", width - 53, height - 31);
+
   if (waveBanner > 0 && gameMode === "playing") {
     textAlign(CENTER, CENTER);
     fill("#fff0cf");
