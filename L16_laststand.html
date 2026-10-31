@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#101817">
+    <title>Last Stand | Night Shift</title>
+    <style>
+      :root {
+        color-scheme: dark;
+        --ink: #101817;
+        --paper: #e8e4d8;
+        --muted: #8c9990;
+        --signal: #d66a4e;
+        --rule: #34413b;
+      }
+
+      * { box-sizing: border-box; }
+
+      body {
+        min-width: 320px;
+        margin: 0;
+        color: var(--paper);
+        background-color: var(--ink);
+        background-image: linear-gradient(90deg, transparent 49px, #1a2421 50px), linear-gradient(transparent 49px, #1a2421 50px);
+        background-size: 50px 50px;
+        font-family: "Trebuchet MS", sans-serif;
+      }
+
+      .page-shell {
+        width: min(1180px, calc(100% - 32px));
+        margin: 0 auto;
+        padding: 22px 0 28px;
+      }
+
+      .masthead {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 16px;
+        border-bottom: 1px solid var(--rule);
+        padding: 0 2px 16px;
+      }
+
+      .brand-block { display: flex; align-items: baseline; gap: 14px; }
+      h1 { margin: 0; font-size: 21px; letter-spacing: 1px; }
+      .edition { color: var(--muted); font-size: 11px; }
+
+      .home-link {
+        color: var(--paper);
+        text-decoration: none;
+        border: 1px solid var(--rule);
+        padding: 9px 12px;
+        font-size: 12px;
+      }
+      .home-link:hover, .home-link:focus-visible { border-color: var(--signal); color: #ffd7c3; }
+
+      .game-frame {
+        margin-top: 18px;
+        border: 1px solid #3b4942;
+        background: #111b1b;
+        box-shadow: 0 18px 50px #0007;
+      }
+
+      #game-stage { width: 100%; line-height: 0; }
+      #game-stage canvas { display: block; width: 100% !important; height: auto !important; }
+
+      .status-line {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 12px;
+        border-top: 1px solid var(--rule);
+        padding: 10px 12px;
+        color: var(--muted);
+        font-size: 10px;
+        letter-spacing: 1px;
+      }
+      .status-line span:first-child { color: #db8466; }
+
+      @media (max-width: 560px) {
+        .page-shell { width: calc(100% - 20px); padding-top: 12px; }
+        .masthead { align-items: flex-start; }
+        .brand-block { display: block; }
+        .edition { display: block; margin-top: 4px; }
+        .status-line { align-items: flex-start; flex-direction: column; gap: 5px; }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="page-shell">
+      <header class="masthead">
+        <div class="brand-block">
+          <h1>LAST STAND</h1>
+          <span class="edition">NIGHT SHIFT / 01</span>
+        </div>
+        <a class="home-link" href="index.html">Back to homepage</a>
+      </header>
+      <section class="game-frame" aria-label="Last Stand zombie survival game">
+        <div id="game-stage"></div>
+        <div class="status-line">
+          <span>DISTRICT 04 / NIGHT WATCH</span>
+          <span>WASD MOVE &nbsp; · &nbsp; CLICK FIRE &nbsp; · &nbsp; 8 WAVES</span>
+        </div>
+      </section>
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.11.1/p5.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/p5play@3.26.5/planck.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/p5play@3.26.5/p5play.js"></script>
+    <script src="L16_laststand.js"></script>
+  </body>
+</html>
