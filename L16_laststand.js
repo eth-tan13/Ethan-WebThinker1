@@ -8,6 +8,7 @@ let experienceOrbs = [];
 let visualBursts = [];
 let electricLinks = [];
 let gameMode = "title";
+let selectedMode = "easy";
 let waveNumber = 1;
 let waveBreak = 0;
 let waveBanner = 0;
@@ -24,13 +25,21 @@ let gunDamage = 20;
 let gunInterval = 0.2;
 let defeatedCount = 0;
 
-const LAST_WAVE = 8;
+const MODE_SETTINGS = {
+  easy: { name: "EASY", waves: 10, note: "STANDARD", tint: "#87bd82" },
+  molten: { name: "MOLTEN", waves: 30, note: "MOLTEN 11+", tint: "#ec853f" },
+  fallen: { name: "FALLEN", waves: 40, note: "FALLEN 16+", tint: "#c06c87" }
+};
 const POWER_INFO = {
   poison: { title: "Venom Arrows", tint: "#87d55a", description: "Piercing poison damage over time" },
   fire: { title: "Fire Arrows", tint: "#ff8b45", description: "Burning damage over time" },
   freeze: { title: "Cryo Bombs", tint: "#72d9f1", description: "Splash damage and 3-second freeze" },
   electric: { title: "Storm Javelin", tint: "#f6d85b", description: "Chain lightning, damage and 1-second stun" }
 };
+
+function currentModeSettings() {
+  return MODE_SETTINGS[selectedMode];
+}
 
 function setup() {
   const canvasWidth = Math.min(1120, Math.max(360, windowWidth - 36));
