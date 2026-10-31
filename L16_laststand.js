@@ -208,7 +208,7 @@ function updateOrbs(elapsed) {
     if (distance < 19) {
       experience += orb.value;
       orb.collected = true;
-      orb.body.delete();
+      orb.body.remove();
     }
   }
   experienceOrbs = experienceOrbs.filter((orb) => !orb.collected);
@@ -324,7 +324,7 @@ function damageZombie(zombie, amount) {
 function defeatZombie(zombie) {
   if (zombie.dead) return;
   zombie.dead = true;
-  zombie.body.delete();
+  zombie.body.remove();
   defeatedCount += 1;
   const orbCount = random() < 0.25 ? 2 : 1;
   for (let index = 0; index < orbCount; index++) {
@@ -445,8 +445,8 @@ function chooseUpgrade(index) {
 }
 
 function restartGame() {
-  for (const zombie of zombies) zombie.body.delete();
-  for (const orb of experienceOrbs) orb.body.delete();
+  for (const zombie of zombies) zombie.body.remove();
+  for (const orb of experienceOrbs) orb.body.remove();
   zombies = [];
   experienceOrbs = [];
   bullets = [];
