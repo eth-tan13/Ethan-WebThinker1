@@ -144,9 +144,10 @@ function updateZombies(elapsed) {
       zombie.body.y += dy / distance * speed;
     }
 
-    if (distance < 34 && hitCooldown <= 0) {
+    const contactDistance = zombie.size / 2 + 14;
+    if (distance < contactDistance && hitCooldown <= 0) {
       survivor.health -= Math.max(5, 8 + Math.floor(waveNumber / 3));
-      hitCooldown = 0.58;
+      hitCooldown = 1;
       addBurst(survivor.body.x, survivor.body.y, 52, "#ff544d", 0.25);
       if (survivor.health <= 0) {
         survivor.health = 0;
@@ -443,7 +444,7 @@ function chooseUpgrade(index) {
   checkLevelUp();
 }
 
-function resetGame() {
+function restartGame() {
   for (const zombie of zombies) zombie.body.delete();
   for (const orb of experienceOrbs) orb.body.delete();
   zombies = [];
@@ -731,10 +732,14 @@ function drawButton(label, x, y, buttonWidth, buttonHeight) {
 
 function mousePressed() {
   if (gameMode === "title") {
-    if (mouseY > height * 0.55 && mouseY < height * 0.7) resetGame();
+    if (mouseY > height * 0.55 && mouseY < height * 0.7) restartGame();
     return false;
   }
   if (gameMode === "playing") {
+    if (mouseX >= width - 96 && mouseY >= height - 48) {
+      restartGame();
+      return false;
+    }
     fireGun();
     return false;
   }
@@ -750,16 +755,17 @@ function mousePressed() {
     return false;
   }
   if (gameMode === "lost" || gameMode === "won") {
-    if (mouseY > height * 0.52 && mouseY < height * 0.74) resetGame();
+    if (mouseY > height * 0.52 && mouseY < height * 0.74) restartGame();
     return false;
   }
   return false;
 }
 
 function keyPressed() {
-  if (gameMode === "title" && (keyCode === ENTER || keyCode === 32)) resetGame();
+  if (key === "r" || key === "R") restartGame();
+  else if (gameMode === "title" && (keyCode === ENTER || keyCode === 32)) restartGame();
   else if (gameMode === "upgrade" && key >= "1" && key <= "3") chooseUpgrade(Number(key) - 1);
-  else if ((gameMode === "lost" || gameMode === "won") && (keyCode === ENTER || key === "r" || key === "R")) resetGame();
+  else if ((gameMode === "lost" || gameMode === "won") && keyCode === ENTER) restartGame();
   return false;
 }
 
